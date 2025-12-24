@@ -9,9 +9,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MKH Bouw - Professioneel Klussenbedrijf Amsterdam | Zakelijk & Particulier",
-  description: "MKH Bouw is uw betrouwbare bouwpartner in Amsterdam voor bedrijven en particulieren. Professioneel stucwerk, schilderwerk, renovaties en onderhoud. ✓ 15+ jaar ervaring ✓ Zakelijke contracten ✓ Eerlijke prijzen ✓ Bel +31 6 84794108",
-  keywords: ["klussenbedrijf Amsterdam", "zakelijk klussenbedrijf", "bedrijven aannemer Amsterdam", "stucwerk Amsterdam", "schilderwerk Amsterdam", "renovatie Amsterdam", "facility service", "onderhoudspartner", "spackspuiten Amsterdam", "MKH Bouw", "B2B bouw Amsterdam"],
+  title:
+    "MKH Bouw - Professioneel Klussenbedrijf Nederland | Zakelijk & Particulier",
+  description:
+    "MKH Bouw is uw betrouwbare bouwpartner door heel Nederland voor bedrijven en particulieren. Gevestigd in Amsterdam, actief landelijk. Professioneel stucwerk, schilderwerk, renovaties en onderhoud. 15+ jaar ervaring • Zakelijke contracten • Eerlijke prijzen • Bel +31 6 84794108",
+  keywords: [
+    "klussenbedrijf Nederland",
+    "zakelijk klussenbedrijf",
+    "bedrijven aannemer",
+    "stucwerk",
+    "schilderwerk",
+    "renovatie",
+    "facility service",
+    "onderhoudspartner",
+    "spackspuiten",
+    "MKH Bouw",
+    "B2B bouw",
+    "klussenbedrijf Amsterdam",
+  ],
 };
 
 export default function RootLayout({

@@ -1,26 +1,30 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { MapPin, Phone, Mail, Send } from 'lucide-react';
+import { useState } from "react";
+import { MapPin, Phone, Mail, Send } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.');
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    console.log("Form submitted:", formData);
+    alert(
+      "Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.",
+    );
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -32,23 +36,26 @@ export default function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-primary font-semibold text-sm uppercase tracking-wide">
             Neem Contact Op
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">
             Wij Helpen U Graag
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Heeft u vragen of wilt u een vrijblijvende offerte? Neem gerust contact met ons op!
+            Heeft u vragen over onze diensten of wilt u een vrijblijvende
+            offerte aanvragen? Neem gerust contact met ons op via telefoon,
+            email of het formulier hieronder. Wij reageren altijd binnen 24 uur
+            en bieden persoonlijk advies voor uw specifieke project.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {/* Contact Info Cards */}
           <div className="space-y-6">
-            <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl shadow-lg">
-              <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+            <div className="bg-slate-50 p-8 rounded-2xl shadow-lg">
+              <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4">
                 <MapPin className="text-white" size={28} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Adres</h3>
@@ -56,27 +63,27 @@ export default function Contact() {
               <p className="text-gray-600">1065 VC Amsterdam</p>
             </div>
 
-            <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl shadow-lg">
-              <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+            <div className="bg-slate-50 p-8 rounded-2xl shadow-lg">
+              <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4">
                 <Phone className="text-white" size={28} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Telefoon</h3>
               <a
                 href="tel:+31684794108"
-                className="text-blue-600 hover:text-blue-700 font-semibold text-lg"
+                className="text-primary hover:text-blue-700 font-semibold text-lg"
               >
                 +31 6 84794108
               </a>
             </div>
 
-            <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl shadow-lg">
-              <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+            <div className="bg-slate-50 p-8 rounded-2xl shadow-lg">
+              <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4">
                 <Mail className="text-white" size={28} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Email</h3>
               <a
                 href="mailto:info@mkhbouw.nl"
-                className="text-blue-600 hover:text-blue-700 font-semibold"
+                className="text-primary hover:text-blue-700 font-semibold"
               >
                 info@mkhbouw.nl
               </a>
@@ -84,11 +91,14 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2 bg-gradient-to-br from-gray-50 to-white p-8 md:p-12 rounded-2xl shadow-lg">
+          <div className="lg:col-span-2 bg-gray-50 p-8 md:p-12 rounded-2xl shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-gray-700 font-semibold mb-2"
+                  >
                     Naam *
                   </label>
                   <input
@@ -98,12 +108,15 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
                     placeholder="Uw naam"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-gray-700 font-semibold mb-2"
+                  >
                     Email *
                   </label>
                   <input
@@ -113,7 +126,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
                     placeholder="uw@email.nl"
                   />
                 </div>
@@ -121,7 +134,10 @@ export default function Contact() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="phone" className="block text-gray-700 font-semibold mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-gray-700 font-semibold mb-2"
+                  >
                     Telefoon
                   </label>
                   <input
@@ -130,12 +146,15 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
                     placeholder="06 12345678"
                   />
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-gray-700 font-semibold mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-gray-700 font-semibold mb-2"
+                  >
                     Onderwerp *
                   </label>
                   <input
@@ -145,14 +164,17 @@ export default function Contact() {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-slate-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
                     placeholder="Waarover gaat het?"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-gray-700 font-semibold mb-2"
+                >
                   Bericht *
                 </label>
                 <textarea
@@ -162,14 +184,14 @@ export default function Contact() {
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-slate-200 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all resize-none"
                   placeholder="Vertel ons over uw project..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                className="w-full bg-primary text-white px-8 py-4 rounded-full hover:bg-primary transition-all transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
               >
                 <Send size={20} />
                 Verstuur Bericht
