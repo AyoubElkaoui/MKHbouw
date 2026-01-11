@@ -5,21 +5,21 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Marco de Vries",
-    role: "Eigenaar Horecagelegenheid",
+    role: "eigenaar horecagelegenheid",
     location: "Amsterdam",
-    text: "MKH Bouw heeft onze complete zaak gerenoveerd. Van stucwerk tot schilderwerk, alles binnen tijd en budget. Het team werkte netjes en professioneel, met minimale overlast voor onze gasten. Zeer tevreden met het eindresultaat!",
+    text: "mkhbouw heeft onze complete zaak gerenoveerd. van stucwerk tot schilderwerk, alles binnen tijd en budget. het team werkte netjes en professioneel, met minimale overlast voor onze gasten. zeer tevreden met het eindresultaat!",
   },
   {
     name: "Linda Bakker",
-    role: "Particulier",
+    role: "particulier",
     location: "Utrecht",
-    text: "Fantastisch werk geleverd bij onze woningrenovatie. De communicatie was helder, de planning klopte precies en het resultaat overtrof onze verwachtingen. Het team was vriendelijk en zorgvuldig.",
+    text: "fantastisch werk geleverd bij onze woningrenovatie. de communicatie was helder, de planning klopte precies en het resultaat overtrof onze verwachtingen. het team was vriendelijk en zorgvuldig.",
   },
   {
     name: "Peter Janssen",
-    role: "Facility Manager",
+    role: "facility manager",
     location: "Rotterdam",
-    text: "Al meerdere kantoorpanden laten renoveren door MKH Bouw. Altijd snel, netjes en met minimale overlast voor onze medewerkers. Een betrouwbare partner voor al onze facility behoeften.",
+    text: "al meerdere kantoorpanden laten renoveren door mkhbouw. altijd snel, netjes en met minimale overlast voor onze medewerkers. een betrouwbare partner voor al onze facility behoeften.",
   },
 ];
 
@@ -29,10 +29,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Wat klanten zeggen
+            wat klanten zeggen
           </h2>
           <p className="text-xl text-gray-600">
-            Meer dan 250 tevreden klanten gingen u voor. Lees hun ervaringen met
+            meer dan 250 tevreden klanten gingen u voor. lees hun ervaringen met
             onze diensten in Amsterdam en daarbuiten.
           </p>
         </div>

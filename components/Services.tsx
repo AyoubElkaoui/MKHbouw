@@ -7,25 +7,25 @@ import { ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "Stucwerk",
+    title: "stucwerk",
     description:
-      "Professioneel stucwerk voor nieuwbouw en renovatie. Van glad sausklaar tot decoratieve afwerking met sierpleister en betonlook. Ons team gebruikt moderne technieken voor perfect gladde oppervlakken.",
+      "professioneel stucwerk voor nieuwbouw en renovatie. van glad sausklaar tot decoratieve afwerking met sierpleister en betonlook. ons team gebruikt moderne technieken voor perfect gladde oppervlakken.",
     image:
       "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop",
     slug: "stucwerk",
   },
   {
-    title: "Schilderwerk",
+    title: "schilderwerk",
     description:
-      "Vakkundig binnen- en buitenschilderwerk. Wij werken met hoogwaardige verven voor een duurzaam en mooi resultaat. Met aandacht voor kleuradvies en bescherming tegen weersinvloeden.",
+      "vakkundig binnen- en buitenschilderwerk. wij werken met hoogwaardige verven voor een duurzaam en mooi resultaat. met aandacht voor kleuradvies en bescherming tegen weersinvloeden.",
     image:
       "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2670&auto=format&fit=crop",
     slug: "schilderwerk",
   },
   {
-    title: "Complete Renovatie",
+    title: "complete renovatie",
     description:
-      "Van ontwerp tot oplevering verzorgen wij uw complete renovatieproject. Ideaal voor bedrijfspanden en woningen. Van keuken tot badkamer, wij coördineren alles voor een stressvrije ervaring.",
+      "van ontwerp tot oplevering verzorgen wij uw complete renovatieproject. ideaal voor bedrijfspanden en woningen. van keuken tot badkamer, wij coördineren alles voor een stressvrije ervaring.",
     image:
       "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2531&auto=format&fit=crop",
     slug: "renovatie",
@@ -38,11 +38,11 @@ export default function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Onze diensten
+            onze diensten
           </h2>
           <p className="text-xl text-gray-600">
-            Van stucwerk tot complete renovaties - wij leveren kwaliteit die
-            blijft. Ontdek onze belangrijkste diensten hieronder, elk uitgevoerd
+            van stucwerk tot complete renovaties - wij leveren kwaliteit die
+            blijft. ontdek onze belangrijkste diensten hieronder, elk uitgevoerd
             met vakmanschap en aandacht voor detail.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function Services() {
                     {service.description}
                   </p>
                   <div className="flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
-                    Meer informatie
+                    meer informatie
                     <ArrowRight size={18} />
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function Services() {
             href="/diensten"
             className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
           >
-            Bekijk al onze diensten
+            bekijk al onze diensten
             <ArrowRight size={20} />
           </Link>
         </div>

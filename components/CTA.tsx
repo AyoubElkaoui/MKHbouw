@@ -26,7 +26,7 @@ export default function CTA() {
           <div className="text-center mb-6">
             <span className="inline-flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg">
               <Zap className="w-4 h-4" fill="currentColor" />
-              GRATIS OFFERTE OP MAAT
+              gratis offerte op maat
             </span>
           </div>
 
@@ -37,12 +37,12 @@ export default function CTA() {
               {/* Header */}
               <div className="text-center mb-10">
                 <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-                  Start Vandaag Nog
+                  start vandaag nog
                 </h2>
                 <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                  Ontvang binnen{" "}
+                  ontvang binnen{" "}
                   <span className="font-bold text-primary">24 uur</span> een
-                  persoonlijke offerte. Ervaren vakmanschap, eerlijke prijzen.
+                  persoonlijke offerte. ervaren vakmanschap, eerlijke prijzen.
                 </p>
               </div>
 
@@ -53,7 +53,7 @@ export default function CTA() {
                   className="group relative inline-flex items-center justify-center bg-primary text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center">
-                    Vraag Offerte Aan
+                    vraag offerte aan
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
@@ -65,7 +65,7 @@ export default function CTA() {
                   <Phone className="mr-3 w-5 h-5 group-hover:rotate-12 transition-transform" />
                   <div className="text-left">
                     <div className="text-xs text-gray-500 font-normal -mb-0.5">
-                      Of bel direct
+                      of bel direct
                     </div>
                     <div>06 84794108</div>
                   </div>
@@ -82,7 +82,7 @@ export default function CTA() {
                     <div className="font-bold text-gray-900 text-sm">
                       24u reactie
                     </div>
-                    <div className="text-xs text-gray-600">Gegarandeerd</div>
+                    <div className="text-xs text-gray-600">gegarandeerd</div>
                   </div>
                 </div>
 
@@ -92,9 +92,9 @@ export default function CTA() {
                   </div>
                   <div>
                     <div className="font-bold text-gray-900 text-sm">
-                      Transparant
+                      transparant
                     </div>
-                    <div className="text-xs text-gray-600">Vaste prijzen</div>
+                    <div className="text-xs text-gray-600">vaste prijzen</div>
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@ export default function CTA() {
                     <div className="font-bold text-gray-900 text-sm">
                       15+ jaar
                     </div>
-                    <div className="text-xs text-gray-600">Ervaring</div>
+                    <div className="text-xs text-gray-600">ervaring</div>
                   </div>
                 </div>
               </div>

@@ -5,14 +5,14 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact - MKH Bouw | Klussenbedrijf Amsterdam | +31 6 84794108",
+  title: "contact - mkhbouw | klussenbedrijf Amsterdam | +31 6 84794108",
   description:
-    "Neem contact op met MKH Bouw voor een vrijblijvende offerte. Bel +31 6 84794108 of stuur een email naar info@mkhbouw.nl. Wij zijn gevestigd in Amsterdam.",
+    "neem contact op met mkhbouw voor een vrijblijvende offerte. bel +31 6 84794108 of stuur een email naar info@mkhbouw.nl. wij zijn gevestigd in Amsterdam.",
   keywords: [
-    "contact MKH Bouw",
+    "contact mkhbouw",
     "offerte aanvragen",
     "klussenbedrijf Amsterdam contact",
-    "MKH Bouw telefoon",
+    "mkhbouw telefoon",
   ],
 };
 
@@ -33,14 +33,14 @@ export default function Contact() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-5xl mx-auto text-center">
               <span className="inline-block bg-blue-50 text-primary px-6 py-2 rounded-full font-semibold text-sm uppercase tracking-wide mb-6">
-                Contact
+                contact
               </span>
               <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6">
-                Neem <span className="text-gray-900">Contact</span> Op
+                neem <span className="text-gray-900">contact</span> op
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-8">
-                Wij staan klaar om uw vragen te beantwoorden en uw project te
-                bespreken. Neem vrijblijvend contact op voor advies over
+                wij staan klaar om uw vragen te beantwoorden en uw project te
+                bespreken. neem vrijblijvend contact op voor advies over
                 stucwerk, schilderwerk of renovaties in Amsterdam.
               </p>
               <div className="flex flex-wrap justify-center gap-6">
@@ -72,13 +72,13 @@ export default function Contact() {
                 <div className="lg:col-span-2 space-y-8">
                   <div>
                     <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                      Contactgegevens
+                      contactgegevens
                     </h2>
                     <p className="text-gray-600 mb-8">
-                      Heeft u vragen over onze diensten of wilt u een
-                      vrijblijvende offerte aanvragen? Neem gerust contact met
+                      heeft u vragen over onze diensten of wilt u een
+                      vrijblijvende offerte aanvragen? neem gerust contact met
                       ons op via onderstaande gegevens of vul het
-                      contactformulier in. Ons team reageert altijd binnen 24
+                      contactformulier in. ons team reageert altijd binnen 24
                       uur met persoonlijk advies voor uw specifieke project.
                     </p>
                   </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-1">
-                          Adres
+                          adres
                         </h3>
                         <p className="text-gray-600">Johan Kernstraat 17</p>
                         <p className="text-gray-600">1065 VC Amsterdam</p>
@@ -103,7 +103,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-1">
-                          Telefoon
+                          telefoon
                         </h3>
                         <a
                           href="tel:+31684794108"
@@ -112,7 +112,7 @@ export default function Contact() {
                           +31 6 84794108
                         </a>
                         <p className="text-gray-600 text-sm mt-1">
-                          Bereikbaar op werkdagen van 08:00 - 18:00
+                          bereikbaar op werkdagen van 08:00 - 18:00
                         </p>
                       </div>
                     </div>
@@ -123,7 +123,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-1">
-                          Email
+                          email
                         </h3>
                         <a
                           href="mailto:info@mkhbouw.nl"
@@ -132,7 +132,7 @@ export default function Contact() {
                           info@mkhbouw.nl
                         </a>
                         <p className="text-gray-600 text-sm mt-1">
-                          We reageren binnen 24 uur
+                          we reageren binnen 24 uur
                         </p>
                       </div>
                     </div>
@@ -143,30 +143,30 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-1">
-                          Openingstijden
+                          openingstijden
                         </h3>
                         <p className="text-gray-600">
-                          Maandag - Vrijdag: 08:00 - 18:00
+                          maandag - vrijdag: 08:00 - 18:00
                         </p>
-                        <p className="text-gray-600">Zaterdag: Op afspraak</p>
-                        <p className="text-gray-600">Zondag: Gesloten</p>
+                        <p className="text-gray-600">zaterdag: op afspraak</p>
+                        <p className="text-gray-600">zondag: gesloten</p>
                       </div>
                     </div>
                   </div>
 
                   <div className="bg-blue-50 p-8 rounded-3xl border-2 border-blue-100 shadow-lg">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">
-                      Spoedklus?
+                      spoedklus?
                     </h3>
                     <p className="text-gray-700 mb-4">
-                      Voor spoedklussen kunt u ons altijd bellen. We doen ons
+                      voor spoedklussen kunt u ons altijd bellen. we doen ons
                       best om zo snel mogelijk te reageren.
                     </p>
                     <a
                       href="tel:+31684794108"
                       className="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-primary-700 transition-all font-semibold"
                     >
-                      Bel Nu: +31 6 84794108
+                      bel nu: +31 6 84794108
                     </a>
                   </div>
                 </div>
@@ -175,10 +175,10 @@ export default function Contact() {
                 <div className="lg:col-span-3">
                   <div className="bg-gray-50 p-8 md:p-10 rounded-2xl shadow-lg">
                     <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                      Vraag een offerte aan
+                      vraag een offerte aan
                     </h2>
                     <p className="text-gray-600 mb-8">
-                      Vul onderstaand formulier in en we nemen zo snel mogelijk
+                      vul onderstaand formulier in en we nemen zo snel mogelijk
                       contact met u op.
                     </p>
                     <ContactForm />
@@ -194,7 +194,7 @@ export default function Contact() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-                Onze Locatie
+                onze locatie
               </h2>
               <div
                 className="bg-white rounded-2xl shadow-lg overflow-hidden"
@@ -213,8 +213,8 @@ export default function Contact() {
               </div>
               <div className="mt-6 text-center">
                 <p className="text-gray-600">
-                  <strong>Werkgebied:</strong> Wij werken voornamelijk in
-                  Amsterdam en directe omgeving. Voor projecten buiten
+                  <strong>werkgebied:</strong> wij werken voornamelijk in
+                  Amsterdam en directe omgeving. voor projecten buiten
                   Amsterdam, neem gerust contact met ons op om de mogelijkheden
                   te bespreken.
                 </p>
@@ -228,45 +228,45 @@ export default function Contact() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-                Veelgestelde Vragen
+                veelgestelde vragen
               </h2>
               <div className="space-y-6">
                 <div className="border-l-4 border-primary pl-6 py-4">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Hoe snel kan ik een offerte verwachten?
+                    hoe snel kan ik een offerte verwachten?
                   </h3>
                   <p className="text-gray-600">
-                    Wij streven ernaar om binnen 24-48 uur te reageren op uw
-                    aanvraag. Voor spoedklussen kunt u ons direct bellen voor
+                    wij streven ernaar om binnen 24-48 uur te reageren op uw
+                    aanvraag. voor spoedklussen kunt u ons direct bellen voor
                     snellere service.
                   </p>
                 </div>
                 <div className="border-l-4 border-primary pl-6 py-4">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Zijn de offertes vrijblijvend?
+                    zijn de offertes vrijblijvend?
                   </h3>
                   <p className="text-gray-600">
-                    Ja, al onze offertes zijn geheel vrijblijvend. U zit nergens
+                    ja, al onze offertes zijn geheel vrijblijvend. u zit nergens
                     aan vast en kunt rustig verschillende opties overwegen.
                   </p>
                 </div>
                 <div className="border-l-4 border-primary pl-6 py-4">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Werken jullie ook in het weekend?
+                    werken jullie ook in het weekend?
                   </h3>
                   <p className="text-gray-600">
-                    Op zaterdag werken wij op afspraak. Zondag zijn wij
-                    gesloten. Neem contact met ons op om de mogelijkheden te
+                    op zaterdag werken wij op afspraak. zondag zijn wij
+                    gesloten. neem contact met ons op om de mogelijkheden te
                     bespreken.
                   </p>
                 </div>
                 <div className="border-l-4 border-primary pl-6 py-4">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Wat is het werkgebied van MKH Bouw?
+                    wat is het werkgebied van mkhbouw?
                   </h3>
                   <p className="text-gray-600">
-                    Wij zijn gevestigd in Amsterdam en werken voornamelijk in
-                    Amsterdam en directe omgeving. Voor projecten daarbuiten
+                    wij zijn gevestigd in Amsterdam en werken voornamelijk in
+                    Amsterdam en directe omgeving. voor projecten daarbuiten
                     kunnen we in overleg kijken naar de mogelijkheden.
                   </p>
                 </div>

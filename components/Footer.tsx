@@ -16,15 +16,15 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/logo.png"
-                alt="MKH Bouw"
+                alt="mkhbouw"
                 width={140}
                 height={70}
                 className="h-14 w-auto brightness-0 invert"
               />
             </Link>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Specialist in stucwerk, schilderwerk en complete renovaties.
-              Actief door heel Nederland sinds 2008.
+              specialist in stucwerk, schilderwerk en complete renovaties.
+              actief door heel Nederland sinds 2008.
             </p>
             <div className="flex gap-4">
               <a
@@ -62,14 +62,14 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Snelle links</h3>
+            <h3 className="font-bold text-lg mb-6 text-white">snelle links</h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Home
+                  home
                 </Link>
               </li>
               <li>
@@ -77,7 +77,7 @@ export default function Footer() {
                   href="/over-ons"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Over ons
+                  over ons
                 </Link>
               </li>
               <li>
@@ -85,7 +85,7 @@ export default function Footer() {
                   href="/diensten"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Diensten
+                  diensten
                 </Link>
               </li>
               <li>
@@ -93,7 +93,7 @@ export default function Footer() {
                   href="/contact"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Contact
+                  contact
                 </Link>
               </li>
             </ul>
@@ -101,14 +101,14 @@ export default function Footer() {
 
           {/* Diensten */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Diensten</h3>
+            <h3 className="font-bold text-lg mb-6 text-white">diensten</h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/diensten/stucwerk"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Stucwerk
+                  stucwerk
                 </Link>
               </li>
               <li>
@@ -116,7 +116,7 @@ export default function Footer() {
                   href="/diensten/schilderwerk"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Schilderwerk
+                  schilderwerk
                 </Link>
               </li>
               <li>
@@ -124,7 +124,7 @@ export default function Footer() {
                   href="/diensten/renovatie"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Renovatie
+                  renovatie
                 </Link>
               </li>
               <li>
@@ -132,7 +132,7 @@ export default function Footer() {
                   href="/diensten/spackspuiten"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Spackspuiten
+                  spackspuiten
                 </Link>
               </li>
             </ul>
@@ -140,12 +140,12 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Contact</h3>
+            <h3 className="font-bold text-lg mb-6 text-white">contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone size={20} className="text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">Bel ons</p>
+                  <p className="text-gray-400 text-sm mb-1">bel ons</p>
                   <a
                     href="tel:+31684794108"
                     className="text-white hover:text-accent transition-colors font-medium"
@@ -157,7 +157,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail size={20} className="text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">Email ons</p>
+                  <p className="text-gray-400 text-sm mb-1">email ons</p>
                   <a
                     href="mailto:info@mkhbouw.nl"
                     className="text-white hover:text-accent transition-colors font-medium"
@@ -169,11 +169,11 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">Locatie</p>
+                  <p className="text-gray-400 text-sm mb-1">locatie</p>
                   <p className="text-white font-medium">
                     Amsterdam
                     <span className="block text-gray-400 text-sm font-normal">
-                      Actief door heel Nederland
+                      actief door heel Nederland
                     </span>
                   </p>
                 </div>
@@ -186,20 +186,20 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              {currentYear} MKH Bouw. Alle rechten voorbehouden.
+              {currentYear} mkhbouw. alle rechten voorbehouden.
             </p>
             <div className="flex gap-6">
               <Link
                 href="/privacy"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
-                Privacy
+                privacy
               </Link>
               <Link
                 href="/algemene-voorwaarden"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
-                Algemene voorwaarden
+                algemene voorwaarden
               </Link>
             </div>
           </div>

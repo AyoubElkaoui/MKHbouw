@@ -29,7 +29,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
-              alt="MKH Bouw"
+              alt="mkhbouw"
               width={320}
               height={160}
               className="h-28 w-auto"
@@ -43,32 +43,32 @@ export default function Navigation() {
               href="/"
               className="text-gray-700 hover:text-primary transition-colors"
             >
-              Home
+              home
             </Link>
             <Link
               href="/over-ons"
               className="text-gray-700 hover:text-primary transition-colors"
             >
-              Over Ons
+              over ons
             </Link>
             <Link
               href="/diensten"
               className="text-gray-700 hover:text-primary transition-colors"
             >
-              Diensten
+              diensten
             </Link>
             <Link
               href="/contact"
               className="text-gray-700 hover:text-primary transition-colors"
             >
-              Contact
+              contact
             </Link>
             <a
               href="tel:+31684794108"
               className="inline-flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
             >
               <Phone size={18} />
-              Bel direct
+              bel direct
             </a>
           </div>
 
@@ -91,28 +91,28 @@ export default function Navigation() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-gray-700 py-2"
             >
-              Home
+              home
             </Link>
             <Link
               href="/over-ons"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-gray-700 py-2"
             >
-              Over Ons
+              over ons
             </Link>
             <Link
               href="/diensten"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-gray-700 py-2"
             >
-              Diensten
+              diensten
             </Link>
             <Link
               href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-gray-700 py-2"
             >
-              Contact
+              contact
             </Link>
             <a
               href="tel:+31684794108"

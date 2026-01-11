@@ -17,10 +17,10 @@ export default function About() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-wide">
-            Kennismaking
+            kennismaking
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">
-            Waarom Kiezen voor MKH Bouw?
+            waarom kiezen voor mkhbouw?
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
@@ -33,10 +33,10 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Uw Betrouwbare Klussenbedrijf door Heel Nederland
+              uw betrouwbare klussenbedrijf door heel Nederland
             </h3>
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-              MKH Bouw is een professioneel klussenbedrijf gevestigd in
+              mkhbouw is een professioneel klussenbedrijf gevestigd in
               Amsterdam, gespecialiseerd in stucwerk, schilderwerk en complete
               renovaties. Met jarenlange ervaring in de bouwsector leveren wij
               hoogwaardige kluswerken voor zowel particulieren als bedrijven
@@ -44,16 +44,15 @@ export default function About() {
               moderne technieken voor duurzame resultaten.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Wat ons onderscheidt? Wij doen wat we beloven - afspraak is
+              wat ons onderscheidt? wij doen wat we beloven - afspraak is
               afspraak. Onze ervaren vakmensen werken met precisie en aandacht
               voor detail, of het nu gaat om spackspuiten, sierpleister of een
-              complete woningrenovatie. Bij MKH Bouw staat kwaliteit voorop en
-              is een tevreden klant ons beste visitekaartje. Ons team bestaat
-              uit gecertificeerde professionals die regelmatig bijscholing
-              volgen.
+              complete woningrenovatie. Bij mkhbouw staat kwaliteit voorop en is
+              een tevreden klant ons beste visitekaartje. Ons team bestaat uit
+              gecertificeerde professionals die regelmatig bijscholing volgen.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Wij werken uitsluitend met hoogwaardige materialen en moderne
+              wij werken uitsluitend met hoogwaardige materialen en moderne
               technieken. Of het nu gaat om monumentale panden, moderne
               nieuwbouw of bedrijfsruimtes - wij hebben de kennis en ervaring om
               elk project tot een succes te maken. Duurzaamheid is een
@@ -66,18 +65,18 @@ export default function About() {
               {[
                 {
                   icon: CheckCircle,
-                  title: "Jarenlange Ervaring",
-                  desc: "Professionele service met bewezen expertise",
+                  title: "jarenlange ervaring",
+                  desc: "professionele service met bewezen expertise",
                 },
                 {
                   icon: Shield,
-                  title: "Betrouwbaar",
-                  desc: "Afspraak is afspraak, altijd",
+                  title: "betrouwbaar",
+                  desc: "afspraak is afspraak, altijd",
                 },
                 {
                   icon: Users,
-                  title: "Persoonlijk Advies",
-                  desc: "Wij denken actief met u mee",
+                  title: "persoonlijk advies",
+                  desc: "wij denken actief met u mee",
                 },
               ].map((feature, i) => (
                 <motion.div
@@ -111,7 +110,7 @@ export default function About() {
           >
             <img
               src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2574&auto=format&fit=crop"
-              alt="MKH Bouw professional construction work"
+              alt="mkhbouw professioneel bouwwerk"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-slate-900/40"></div>
@@ -121,7 +120,7 @@ export default function About() {
                   15+
                 </div>
                 <div className="text-slate-200 text-lg">
-                  Jaar Ervaring Landelijk
+                  jaar ervaring landelijk
                 </div>
               </div>
             </div>

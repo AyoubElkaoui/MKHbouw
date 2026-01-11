@@ -37,16 +37,16 @@ export default function Contact() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-wide">
-            Neem Contact Op
+            neem contact op
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">
-            Wij Helpen U Graag
+            wij helpen u graag
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Heeft u vragen over onze diensten of wilt u een vrijblijvende
-            offerte aanvragen? Neem gerust contact met ons op via telefoon,
-            email of het formulier hieronder. Wij reageren altijd binnen 24 uur
+            heeft u vragen over onze diensten of wilt u een vrijblijvende
+            offerte aanvragen? neem gerust contact met ons op via telefoon,
+            email of het formulier hieronder. wij reageren altijd binnen 24 uur
             en bieden persoonlijk advies voor uw specifieke project.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function Contact() {
               <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4">
                 <MapPin className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Adres</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">adres</h3>
               <p className="text-gray-600">Johan Kernstraat 17</p>
               <p className="text-gray-600">1065 VC Amsterdam</p>
             </div>
@@ -67,7 +67,7 @@ export default function Contact() {
               <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4">
                 <Phone className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Telefoon</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">telefoon</h3>
               <a
                 href="tel:+31684794108"
                 className="text-primary hover:text-blue-700 font-semibold text-lg"
@@ -80,7 +80,7 @@ export default function Contact() {
               <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-4">
                 <Mail className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Email</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">email</h3>
               <a
                 href="mailto:info@mkhbouw.nl"
                 className="text-primary hover:text-blue-700 font-semibold"
@@ -99,7 +99,7 @@ export default function Contact() {
                     htmlFor="name"
                     className="block text-gray-700 font-semibold mb-2"
                   >
-                    Naam *
+                    naam *
                   </label>
                   <input
                     type="text"
@@ -109,7 +109,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-                    placeholder="Uw naam"
+                    placeholder="uw naam"
                   />
                 </div>
                 <div>
@@ -117,7 +117,7 @@ export default function Contact() {
                     htmlFor="email"
                     className="block text-gray-700 font-semibold mb-2"
                   >
-                    Email *
+                    email *
                   </label>
                   <input
                     type="email"
@@ -138,7 +138,7 @@ export default function Contact() {
                     htmlFor="phone"
                     className="block text-gray-700 font-semibold mb-2"
                   >
-                    Telefoon
+                    telefoon
                   </label>
                   <input
                     type="tel"
@@ -155,7 +155,7 @@ export default function Contact() {
                     htmlFor="subject"
                     className="block text-gray-700 font-semibold mb-2"
                   >
-                    Onderwerp *
+                    onderwerp *
                   </label>
                   <input
                     type="text"
@@ -165,7 +165,7 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-                    placeholder="Waarover gaat het?"
+                    placeholder="waarover gaat het?"
                   />
                 </div>
               </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-gray-700 font-semibold mb-2"
                 >
-                  Bericht *
+                  bericht *
                 </label>
                 <textarea
                   id="message"
@@ -185,7 +185,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all resize-none"
-                  placeholder="Vertel ons over uw project..."
+                  placeholder="vertel ons over uw project..."
                 ></textarea>
               </div>
 
@@ -194,7 +194,7 @@ export default function Contact() {
                 className="w-full bg-primary text-white px-8 py-4 rounded-full hover:bg-primary transition-all transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
               >
                 <Send size={20} />
-                Verstuur Bericht
+                verstuur bericht
               </button>
             </form>
           </div>

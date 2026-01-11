@@ -12,21 +12,21 @@ export default function Hero() {
           {/* Left Column - Content */}
           <div>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Professioneel stucwerk en schilderwerk
+              professioneel stucwerk en schilderwerk
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              MKH Bouw is gevestigd in Amsterdam en actief door heel Nederland.
-              Specialist in stucwerk, schilderwerk en complete renovaties voor
+              mkhbouw is gevestigd in Amsterdam en actief door heel Nederland.
+              specialist in stucwerk, schilderwerk en complete renovaties voor
               particulieren en bedrijven.
             </p>
 
             {/* USPs */}
             <div className="space-y-3 mb-10">
               {[
-                "Meer dan 15 jaar ervaring",
-                "Vaste prijsafspraak, geen verrassingen",
-                "Landelijk actief, snel ter plaatse",
+                "meer dan 15 jaar ervaring",
+                "vaste prijsafspraak, geen verrassingen",
+                "landelijk actief, snel ter plaatse",
               ].map((text) => (
                 <div key={text} className="flex items-center gap-3">
                   <svg
@@ -51,7 +51,7 @@ export default function Hero() {
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
               >
-                Gratis offerte aanvragen
+                gratis offerte aanvragen
                 <ArrowRight size={20} />
               </a>
               <a
@@ -69,7 +69,7 @@ export default function Hero() {
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2531&auto=format&fit=crop"
-                alt="Professional stucwerk en schilderwerk"
+                alt="professioneel stucwerk en schilderwerk"
                 fill
                 className="object-cover"
                 priority

@@ -5,27 +5,27 @@ import { Shield, Users, Award, Clock } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "Garantie op kwaliteit",
+    title: "garantie op kwaliteit",
     description:
-      "Wij staan achter ons werk met volledige garantie op al onze werkzaamheden voor uw gemoedsrust.",
+      "wij staan achter ons werk met volledige garantie op al onze werkzaamheden voor uw gemoedsrust.",
   },
   {
     icon: Users,
-    title: "Ervaren vakmensen",
+    title: "ervaren vakmensen",
     description:
-      "Gecertificeerde professionals met jarenlange ervaring die regelmatig bijscholing volgen.",
+      "gecertificeerde professionals met jarenlange ervaring die regelmatig bijscholing volgen.",
   },
   {
     icon: Award,
-    title: "Erkend bedrijf",
+    title: "erkend bedrijf",
     description:
-      "Volledig KVK-geregistreerd en verzekerd voor uw veiligheid en vertrouwen.",
+      "volledig KVK-geregistreerd en verzekerd voor uw veiligheid en vertrouwen.",
   },
   {
     icon: Clock,
-    title: "Binnen planning",
+    title: "binnen planning",
     description:
-      "Duidelijke afspraken, geen verrassingen achteraf. Wij houden ons aan planningen en budgetten.",
+      "duidelijke afspraken, geen verrassingen achteraf. wij houden ons aan planningen en budgetten.",
   },
 ];
 
@@ -35,11 +35,11 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Waarom MKH Bouw
+            waarom mkhbouw
           </h2>
           <p className="text-xl text-gray-600">
-            Sinds 2008 uw betrouwbare partner voor stucwerk en schilderwerk.
-            Meer dan 500 projecten succesvol afgerond. Wij combineren ervaring
+            sinds 2008 uw betrouwbare partner voor stucwerk en schilderwerk.
+            meer dan 500 projecten succesvol afgerond. wij combineren ervaring
             met moderne technieken voor optimale resultaten.
           </p>
         </div>

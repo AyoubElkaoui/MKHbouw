@@ -1,0 +1,29 @@
+{
+  "name": "mkhbouw - professioneel klussenbedrijf",
+  "short_name": "mkhbouw",
+  "description": "mkhbouw is uw betrouwbare bouwpartner door heel Nederland. Specialist in stucwerk, schilderwerk en complete renovaties.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "construction", "services"],
+  "lang": "nl",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

@@ -17,7 +17,7 @@ export default function ContactForm() {
     // Handle form submission here
     console.log("Form submitted:", formData);
     alert(
-      "Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.",
+      "bedankt voor uw bericht! we nemen zo snel mogelijk contact met u op.",
     );
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
@@ -39,7 +39,7 @@ export default function ContactForm() {
             htmlFor="name"
             className="block text-gray-700 font-semibold mb-2"
           >
-            Naam *
+            naam *
           </label>
           <input
             type="text"
@@ -49,7 +49,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-            placeholder="Uw naam"
+            placeholder="uw naam"
           />
         </div>
         <div>
@@ -57,7 +57,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-gray-700 font-semibold mb-2"
           >
-            Email *
+            email *
           </label>
           <input
             type="email"
@@ -78,7 +78,7 @@ export default function ContactForm() {
             htmlFor="phone"
             className="block text-gray-700 font-semibold mb-2"
           >
-            Telefoon
+            telefoon
           </label>
           <input
             type="tel"
@@ -95,7 +95,7 @@ export default function ContactForm() {
             htmlFor="subject"
             className="block text-gray-700 font-semibold mb-2"
           >
-            Onderwerp *
+            onderwerp *
           </label>
           <input
             type="text"
@@ -105,7 +105,7 @@ export default function ContactForm() {
             value={formData.subject}
             onChange={handleChange}
             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-            placeholder="Waarover gaat het?"
+            placeholder="waarover gaat het?"
           />
         </div>
       </div>
@@ -115,7 +115,7 @@ export default function ContactForm() {
           htmlFor="message"
           className="block text-gray-700 font-semibold mb-2"
         >
-          Bericht *
+          bericht *
         </label>
         <textarea
           id="message"
@@ -125,7 +125,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all resize-none"
-          placeholder="Vertel ons over uw project..."
+          placeholder="vertel ons over uw project..."
         ></textarea>
       </div>
 
@@ -134,7 +134,7 @@ export default function ContactForm() {
         className="w-full bg-primary text-white px-8 py-4 rounded-full hover:bg-primary transition-all transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
       >
         <Send size={20} />
-        Verstuur Bericht
+        verstuur bericht
       </button>
     </form>
   );
