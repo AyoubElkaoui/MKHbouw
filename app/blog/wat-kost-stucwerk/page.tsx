@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "wat kost stucwerk in 2024? complete prijsoverzicht",
     description:
       "alle stucwerk prijzen op een rij. van spackspuiten tot sierpleister.",
-    url: "https://mkhbouw.nl/gids/wat-kost-stucwerk",
+    url: "https://mkhbouw.nl/blog/wat-kost-stucwerk",
   },
 };
 

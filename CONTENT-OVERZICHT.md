@@ -1,18 +1,19 @@
 # Content Overzicht - mkhbouw SEO Strategie
 
-## ✅ LIVE PAGES (7 totaal)
+## ✅ LIVE PAGES (8 totaal)
 
 ### Lokale Landing Pages (2)
 1. ✅ `/locaties/stucwerk-amsterdam` - Amsterdam stucwerk LP
 2. ✅ `/locaties/stucwerk-rotterdam` - Rotterdam stucwerk LP
 
 ### Informatieve Content (1)
-1. ✅ `/gids/wat-kost-stucwerk` - Complete prijsgids stucwerk
+1. ✅ `/blog/wat-kost-stucwerk` - Complete prijsgids stucwerk
 
-### Bestaande Pages (4)
+### Bestaande Pages (5)
 - ✅ Homepage `/`
 - ✅ `/over-ons`
 - ✅ `/contact`
+- ✅ `/blog` - Blog overzichtspagina met alle gids artikelen
 - ✅ `/diensten` + 8 dienst detail pages
 
 ---
@@ -25,23 +26,23 @@
 5. `/locaties/renovatie-amsterdam` - Amsterdam renovatie LP
 
 ### Gids Artikelen (High-Value Keywords)
-2. `/gids/wat-kost-schilderwerk` - Schilderwerk prijzen
-3. `/gids/verschil-spackspuiten-traditioneel` - Techniek vergelijking
-4. `/gids/hoe-lang-duurt-stucwerk` - Tijdsduur uitleg
-5. `/gids/stucwerk-scheuren-repareren` - Reparatie guide
+2. `/blog/wat-kost-schilderwerk` - Schilderwerk prijzen
+3. `/blog/verschil-spackspuiten-traditioneel` - Techniek vergelijking
+4. `/blog/hoe-lang-duurt-stucwerk` - Tijdsduur uitleg
+5. `/blog/stucwerk-scheuren-repareren` - Reparatie guide
 
 ---
 
 ## 📊 SEO IMPACT VOORSPELLING
 
 ### Na 2 maanden (huidige status):
-- **Pages**: 7 core + 2 LP's = 9 totaal
+- **Pages**: 8 core + 2 LP's + 1 blog overzicht = 11 totaal
 - **Verwacht verkeer**: 500-1.000 bezoekers/maand
 - **Target keywords**: 20+
 - **Leads**: 5-10/maand
 
 ### Na 3 maanden (met 5 LP's + 5 gids):
-- **Pages**: 7 core + 5 LP's + 5 gids = 17 totaal
+- **Pages**: 8 core + 5 LP's + 5 gids + 1 blog = 19 totaal
 - **Verwacht verkeer**: 2.000-3.000 bezoekers/maand
 - **Target keywords**: 50+
 - **Leads**: 15-25/maand
@@ -225,6 +226,8 @@ wat-kost-stucwerk → stucwerk-amsterdam
 - ✅ stucwerk-amsterdam
 - ✅ stucwerk-rotterdam  
 - ✅ wat-kost-stucwerk
+- ✅ Blog overzichtspagina
+- ✅ Blog link in navbar + footer
 - ✅ Sitemap geüpdatet
 - ✅ Robots.txt actief
 
@@ -352,6 +355,29 @@ wat-kost-stucwerk → stucwerk-amsterdam
 
 ---
 
-**Status**: 2 van 5 LP's live, 1 van 5 gids artikelen live
+**Status**: 2 van 5 LP's live, 1 van 5 gids artikelen live, blog pagina live ✅
 **Laatste update**: 2024
 **Volgende milestone**: Week 2 - 3 nieuwe pages live
+
+---
+
+## 📰 BLOG OVERZICHTSPAGINA
+
+### Functionaliteit:
+- ✅ Overzicht van alle gids artikelen
+- ✅ Category filters (prijzen, technieken, planning, onderhoud)
+- ✅ Featured images per artikel
+- ✅ Read time en datum per artikel
+- ✅ Direct links naar `/blog/[slug]`
+- ✅ CTA sectie voor conversie
+- ✅ Populaire onderwerpen links
+- ✅ In navbar en footer
+
+### URL:
+`/blog` - Blog overzichtspagina
+
+### SEO:
+- Title: "blog & gidsen - tips over stucwerk en schilderwerk | mkhbouw"
+- Meta: geoptimaliseerd voor "stucwerk blog", "bouw tips"
+- Internal linking naar alle gids artikelen
+- Hub voor content discovery

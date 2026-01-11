@@ -29,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
   ];
 
   // Lokale landing pages
@@ -68,31 +74,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Content/gids pagina's
   const gidsPages = [
     {
-      url: `${baseUrl}/gids/wat-kost-stucwerk`,
+      url: `${baseUrl}/blog/wat-kost-stucwerk`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/gids/wat-kost-schilderwerk`,
+      url: `${baseUrl}/blog/wat-kost-schilderwerk`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/gids/verschil-spackspuiten-traditioneel`,
+      url: `${baseUrl}/blog/verschil-spackspuiten-traditioneel`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/gids/hoe-lang-duurt-stucwerk`,
+      url: `${baseUrl}/blog/hoe-lang-duurt-stucwerk`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/gids/stucwerk-scheuren-repareren`,
+      url: `${baseUrl}/blog/stucwerk-scheuren-repareren`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,

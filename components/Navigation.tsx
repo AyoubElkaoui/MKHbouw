@@ -58,6 +58,12 @@ export default function Navigation() {
               diensten
             </Link>
             <Link
+              href="/blog"
+              className="text-gray-700 hover:text-primary transition-colors"
+            >
+              blog
+            </Link>
+            <Link
               href="/contact"
               className="text-gray-700 hover:text-primary transition-colors"
             >
@@ -106,6 +112,13 @@ export default function Navigation() {
               className="block text-gray-700 py-2"
             >
               diensten
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-gray-700 py-2"
+            >
+              blog
             </Link>
             <Link
               href="/contact"

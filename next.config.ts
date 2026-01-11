@@ -48,6 +48,42 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  // 301 Redirects van /gids naar /blog
+  async redirects() {
+    return [
+      {
+        source: "/gids/wat-kost-stucwerk",
+        destination: "/blog/wat-kost-stucwerk",
+        permanent: true,
+      },
+      {
+        source: "/gids/hoe-lang-duurt-stucwerk",
+        destination: "/blog/hoe-lang-duurt-stucwerk",
+        permanent: true,
+      },
+      {
+        source: "/gids/wat-kost-schilderwerk",
+        destination: "/blog/wat-kost-schilderwerk",
+        permanent: true,
+      },
+      {
+        source: "/gids/stucwerk-scheuren-repareren",
+        destination: "/blog/stucwerk-scheuren-repareren",
+        permanent: true,
+      },
+      {
+        source: "/gids/verschil-spackspuiten-traditioneel",
+        destination: "/blog/verschil-spackspuiten-traditioneel",
+        permanent: true,
+      },
+      {
+        source: "/gids/:slug*",
+        destination: "/blog/:slug*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
