@@ -7,27 +7,28 @@ import {
   Calculator,
   TrendingUp,
   AlertCircle,
+  Phone,
 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "wat kost stucwerk in 2024? prijzen per m² | mkhbouw",
+  title: "wat kost stucwerk in 2026? offerte aanvragen | mkhbouw",
   description:
-    "ontdek wat stucwerk kost in 2024. complete prijsoverzicht voor spackspuiten, traditioneel stucwerk en sierpleister. gratis offerte aanvragen bij mkhbouw.",
+    "benieuwd naar de kosten van stucwerk in 2026? ontdek welke factoren de prijs bepalen en vraag een vrijblijvende offerte aan bij mkhbouw.",
   keywords: [
     "wat kost stucwerk",
-    "stucwerk prijs per m2",
+    "stucwerk prijs",
     "spackspuiten kosten",
     "sierpleister prijs",
     "stucadoor kosten",
-    "stucwerk prijzen 2024",
+    "stucwerk prijzen 2026",
     "hoeveel kost stucwerk",
-    "prijs stucwerk per vierkante meter",
+    "offerte stucwerk",
   ],
   openGraph: {
-    title: "wat kost stucwerk in 2024? complete prijsoverzicht",
+    title: "wat kost stucwerk in 2026? offerte aanvragen",
     description:
-      "alle stucwerk prijzen op een rij. van spackspuiten tot sierpleister.",
+      "ontdek welke factoren de prijs van stucwerk bepalen en vraag een vrijblijvende offerte aan.",
     url: "https://mkhbouw.nl/blog/wat-kost-stucwerk",
   },
 };
@@ -43,46 +44,48 @@ export default function WatKostStucwerk() {
             <div className="max-w-4xl mx-auto">
               <div className="inline-block bg-primary/10 text-primary px-6 py-2 rounded-full font-semibold text-sm mb-6">
                 <Calculator className="inline-block w-4 h-4 mr-2" />
-                prijsgids 2024
+                prijsgids 2026
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                wat kost stucwerk in 2024?
+                wat kost stucwerk in 2026?
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 ben je van plan om stucwerk te laten doen en wil je weten wat de
-                kosten zijn? in deze uitgebreide gids leggen we uit wat stucwerk
-                kost, welke factoren de prijs beïnvloeden en hoe je kunt
-                besparen zonder in te leveren op kwaliteit.
+                kosten zijn? de prijs van stucwerk hangt af van verschillende
+                factoren. in deze gids leggen we uit wat de prijs beïnvloedt en
+                waarom maatwerk zo belangrijk is.
               </p>
 
               <div className="bg-blue-100 border-l-4 border-primary p-6 rounded-r-lg">
                 <p className="text-gray-800 font-semibold mb-2">
-                  💡 snel antwoord: gemiddelde prijzen
+                  💡 belangrijk om te weten
                 </p>
-                <ul className="space-y-2 text-gray-700">
-                  <li>
-                    • spackspuiten: <strong>€8 - €15 per m²</strong>
-                  </li>
-                  <li>
-                    • traditioneel stucwerk: <strong>€15 - €25 per m²</strong>
-                  </li>
-                  <li>
-                    • sierpleister: <strong>€25 - €50 per m²</strong>
-                  </li>
-                </ul>
+                <p className="text-gray-700 mb-4">
+                  elke stucwerkklus is uniek. de prijs hangt af van het type
+                  stucwerk, oppervlakte, staat van de ondergrond, locatie en
+                  gewenste afwerking. daarom werken wij alleen met
+                  projectgebonden offertes.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                >
+                  <Phone size={18} />
+                  vraag vrijblijvende offerte aan
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Prijsoverzicht */}
+        {/* Types stucwerk */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                stucwerk prijzen per m² overzicht
+                welke soorten stucwerk zijn er?
               </h2>
 
               <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -91,9 +94,10 @@ export default function WatKostStucwerk() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     spackspuiten
                   </h3>
-                  <div className="text-4xl font-bold text-primary mb-6">
-                    €8 - €15<span className="text-xl text-gray-600">/m²</span>
-                  </div>
+                  <p className="text-gray-600 mb-6">
+                    moderne techniek waarbij stucwerk machinaal wordt
+                    aangebracht. ideaal voor grotere oppervlakken.
+                  </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-2">
                       <CheckCircle
@@ -132,10 +136,10 @@ export default function WatKostStucwerk() {
                     ideaal voor: nieuwbouw, grote ruimtes, plafonds
                   </p>
                   <Link
-                    href="/locaties/stucwerk-amsterdam"
+                    href="/diensten/spackspuiten"
                     className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                   >
-                    vraag offerte aan <ArrowRight size={18} />
+                    meer over spackspuiten <ArrowRight size={18} />
                   </Link>
                 </div>
 
@@ -144,16 +148,19 @@ export default function WatKostStucwerk() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     traditioneel stucwerk
                   </h3>
-                  <div className="text-4xl font-bold text-primary mb-6">
-                    €15 - €25<span className="text-xl text-gray-600">/m²</span>
-                  </div>
+                  <p className="text-gray-600 mb-6">
+                    vakmanschap waarbij stuc met de hand wordt aangebracht.
+                    perfect voor renovatie en maatwerk.
+                  </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-2">
                       <CheckCircle
                         className="text-green-500 flex-shrink-0 mt-1"
                         size={20}
                       />
-                      <span className="text-gray-700">vakmanschap</span>
+                      <span className="text-gray-700">
+                        ambachtelijk vakwerk
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle
@@ -188,7 +195,7 @@ export default function WatKostStucwerk() {
                     href="/diensten/stucwerk"
                     className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                   >
-                    meer info <ArrowRight size={18} />
+                    meer over traditioneel stucwerk <ArrowRight size={18} />
                   </Link>
                 </div>
 
@@ -197,9 +204,10 @@ export default function WatKostStucwerk() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     sierpleister
                   </h3>
-                  <div className="text-4xl font-bold text-primary mb-6">
-                    €25 - €50<span className="text-xl text-gray-600">/m²</span>
-                  </div>
+                  <p className="text-gray-600 mb-6">
+                    decoratieve afwerking met unieke structuren en texturen.
+                    voor een luxe uitstraling.
+                  </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-2">
                       <CheckCircle
@@ -222,7 +230,9 @@ export default function WatKostStucwerk() {
                         className="text-green-500 flex-shrink-0 mt-1"
                         size={20}
                       />
-                      <span className="text-gray-700">diverse kleuren</span>
+                      <span className="text-gray-700">
+                        verschillende afwerkingen mogelijk
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle
@@ -239,7 +249,7 @@ export default function WatKostStucwerk() {
                     href="/diensten/sierpleister"
                     className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                   >
-                    bekijk voorbeelden <ArrowRight size={18} />
+                    bekijk sierpleister <ArrowRight size={18} />
                   </Link>
                 </div>
               </div>
@@ -250,358 +260,468 @@ export default function WatKostStucwerk() {
         {/* Factoren die prijs beïnvloeden */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                welke factoren bepalen de prijs?
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Oppervlakte */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <TrendingUp className="text-primary" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        oppervlakte
+                      </h3>
+                      <p className="text-gray-700 mb-2">
+                        hoe groter het oppervlak, hoe lager de prijs per m²
+                        meestal uitvalt. bij grotere projecten kunnen we
+                        schaalvoordelen doorberekenen.
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        tip: combineer meerdere ruimtes in één project voor het
+                        beste tarief
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Staat ondergrond */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <AlertCircle className="text-primary" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        staat van de ondergrond
+                      </h3>
+                      <p className="text-gray-700 mb-2">
+                        een slechte, ongelijke of beschadigde ondergrond vraagt
+                        meer voorbereidend werk. scheuren moeten gerepareerd
+                        worden en het oppervlak moet vlak zijn.
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        bij een bezichtiging beoordelen we de staat en geven we
+                        advies
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Type ruimte */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <CheckCircle className="text-primary" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        type ruimte en hoogte
+                      </h3>
+                      <p className="text-gray-700 mb-4">
+                        de moeilijkheidsgraad verschilt per ruimte. plafonds,
+                        trappenhuizen en hoge ruimten vragen meer tijd en
+                        materieel.
+                      </p>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• wanden: standaard</li>
+                        <li>• plafonds: meer tijd nodig</li>
+                        <li>• trappenhuizen: complex</li>
+                        <li>• hoge ruimten: extra materieel vereist</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Gewenste afwerking */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <Calculator className="text-primary" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        gewenste afwerking
+                      </h3>
+                      <p className="text-gray-700 mb-4">
+                        de kwaliteit van de afwerking bepaalt ook de prijs.
+                        hogere kwaliteit vraagt meer tijd en vakmanschap.
+                      </p>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• standaard sausklaar</li>
+                        <li>• extra glad afgewerkt</li>
+                        <li>• hoogste kwaliteit afwerking</li>
+                        <li>• sierpleister met structuur</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Extra werkzaamheden */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                welke factoren beïnvloeden de prijs van stucwerk?
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                mogelijke extra werkzaamheden
+              </h2>
+
+              <div className="bg-blue-50 p-8 rounded-2xl">
+                <p className="text-gray-700 mb-6">
+                  naast het stucwerk zelf zijn er vaak extra werkzaamheden
+                  nodig. deze nemen we mee in de offerte:
+                </p>
+
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle
+                      className="text-primary flex-shrink-0 mt-1"
+                      size={20}
+                    />
+                    <span>
+                      <strong>schuurwerk:</strong> voorbewerking van wanden en
+                      plafonds
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle
+                      className="text-primary flex-shrink-0 mt-1"
+                      size={20}
+                    />
+                    <span>
+                      <strong>afplakken:</strong> bescherming van kozijnen,
+                      vloeren en meubels
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle
+                      className="text-primary flex-shrink-0 mt-1"
+                      size={20}
+                    />
+                    <span>
+                      <strong>grondlaag:</strong> voor betere hechting
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle
+                      className="text-primary flex-shrink-0 mt-1"
+                      size={20}
+                    />
+                    <span>
+                      <strong>verwijderen behang:</strong> oude afwerking
+                      verwijderen
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle
+                      className="text-primary flex-shrink-0 mt-1"
+                      size={20}
+                    />
+                    <span>
+                      <strong>reparaties:</strong> scheuren en gaten dichten
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle
+                      className="text-primary flex-shrink-0 mt-1"
+                      size={20}
+                    />
+                    <span>
+                      <strong>steigers:</strong> bij hoge ruimtes of gevels
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Hoe bespaar je */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                slimme tips om kosten te besparen
               </h2>
 
               <div className="space-y-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <TrendingUp className="text-primary" size={24} />
-                    oppervlakte
-                  </h3>
-                  <p className="text-gray-700 mb-2">
-                    hoe groter het oppervlak, hoe lager de prijs per m². bij
-                    grote projecten (100m² of meer) kun je vaak rekenen op
-                    10-20% korting op de m²-prijs.
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    <strong>voorbeeld:</strong> 50m² = €12/m² | 150m² = €9/m²
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <AlertCircle className="text-primary" size={24} />
-                    staat van de ondergrond
-                  </h3>
-                  <p className="text-gray-700 mb-2">
-                    een slechte, ongelijke of beschadigde ondergrond vraagt meer
-                    voorbereidend werk. dit kan de prijs met €5-10 per m²
-                    verhogen.
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    <strong>tip:</strong> laat altijd eerst een opname doen voor
-                    een juiste prijsinschatting
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    type ruimte
-                  </h3>
-                  <p className="text-gray-700 mb-2">
-                    plafonds zijn vaak duurder dan wanden vanwege de lastigere
-                    werkhoogte. trappenhuizen en ruimtes met veel hoeken kosten
-                    ook meer.
-                  </p>
-                  <ul className="text-sm text-gray-600 space-y-1 mt-3">
-                    <li>• wanden: standaard tarief</li>
-                    <li>• plafonds: +€2-3 per m²</li>
-                    <li>• trappenhuizen: +€3-5 per m²</li>
-                    <li>• hoge ruimtes (&gt;3m): +€2-4 per m²</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    afwerking niveau
-                  </h3>
-                  <p className="text-gray-700 mb-2">
-                    de mate van afwerking bepaalt ook de prijs:
-                  </p>
-                  <ul className="text-sm text-gray-600 space-y-1 mt-3">
-                    <li>• basis sausklaar: standaard tarief</li>
-                    <li>• extra glad afgewerkt: +€2-3 per m²</li>
-                    <li>• Q4 afwerking (hoogste kwaliteit): +€5-8 per m²</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    locatie
-                  </h3>
-                  <p className="text-gray-700 mb-2">
-                    prijzen kunnen per regio verschillen. in grote steden zoals
-                    Amsterdam, Rotterdam en Utrecht zijn de prijzen vaak 10-15%
-                    hoger door hogere parkeerkosten en reistijd.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Extra kosten */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                let op deze extra kosten
-              </h2>
-
-              <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl mb-8">
-                <h3 className="font-bold text-gray-900 mb-3">
-                  ⚠️ kosten die vaak vergeten worden:
-                </h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>
-                    • <strong>schuurwerk:</strong> €3-5 per m² (voorbereiding)
-                  </li>
-                  <li>
-                    • <strong>afplakken:</strong> €1-2 per m²
-                  </li>
-                  <li>
-                    • <strong>grondlaag:</strong> €2-3 per m²
-                  </li>
-                  <li>
-                    • <strong>verwijderen behang:</strong> €3-4 per m²
-                  </li>
-                  <li>
-                    • <strong>reparaties:</strong> vanaf €50 per uur
-                  </li>
-                  <li>
-                    • <strong>parkeerkosten:</strong> €5-25 per dag (steden)
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-xl">
-                <h3 className="font-bold text-gray-900 mb-3">
-                  💡 vaak wél inclusief:
-                </h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• materialen (stuc, primer, etc.)</li>
-                  <li>• gereedschap en apparatuur</li>
-                  <li>• opruimen en afvoer van afval</li>
-                  <li>• garantie op het werk</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Besparen tips */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                hoe bespaar je op stucwerk zonder in te leveren op kwaliteit?
-              </h2>
-
-              <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="font-bold text-gray-900 mb-3">
-                    ✅ doe het voorbereiding zelf
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    1. voorbereiding zelf doen
                   </h3>
                   <p className="text-gray-700">
                     door zelf meubels te verhuizen, behang te verwijderen en te
-                    schuren kun je €200-500 besparen op een gemiddeld project.
+                    schuren kun je op arbeidskosten besparen.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="font-bold text-gray-900 mb-3">
-                    ✅ kies het juiste moment
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    2. meerdere ruimtes combineren
                   </h3>
                   <p className="text-gray-700">
-                    buiten het hoogseizoen (nov-feb) zijn stucadoors vaak
-                    flexibeler met prijzen. vraag naar seizoenskortingen.
+                    hoe meer m² we in één keer kunnen doen, hoe voordeliger het
+                    wordt. overweeg om meerdere kamers tegelijk te laten stucen.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="font-bold text-gray-900 mb-3">
-                    ✅ combineer werkzaamheden
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    3. kies het juiste seizoen
                   </h3>
                   <p className="text-gray-700">
-                    laat meerdere kamers of meerdere werkzaamheden (stucwerk +
-                    schilderwerk) tegelijk doen voor een beter totaalpakket.
+                    in rustigere periodes hebben we soms meer flexibiliteit in
+                    planning en tarieven. vraag ernaar bij je offerte.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="font-bold text-gray-900 mb-3">
-                    ✅ vergelijk meerdere offertes
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    4. wacht niet te lang met onderhoud
                   </h3>
                   <p className="text-gray-700">
-                    vraag 3-4 offertes aan en vergelijk niet alleen op prijs
-                    maar ook op ervaring, reviews en garanties.
+                    kleine scheuren worden grote scheuren. door op tijd te
+                    onderhouden voorkom je grotere en duurdere reparaties.
                   </p>
                 </div>
-              </div>
-
-              <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl mt-8">
-                <h3 className="font-bold text-gray-900 mb-3">
-                  ❌ bespaar hier NIET op:
-                </h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>
-                    • kwaliteit van materialen (goedkope stuc scheurt sneller)
-                  </li>
-                  <li>
-                    • ervaren stucadoor (fouten herstellen kost meer dan goed
-                    werk)
-                  </li>
-                  <li>
-                    • goede voorbereiding (slecht voorbereid = slecht
-                    eindresultaat)
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Voorbeeld berekening */}
+        {/* Waarom mkhbouw */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                voorbeeldberekening: wat kost stucwerk voor een gemiddelde
-                woning?
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                waarom kiezen voor mkhbouw?
               </h2>
 
-              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border-2 border-blue-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-6">
-                  scenario: 3-kamer appartement (90m² stucwerk)
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
+                <div className="flex items-start gap-4">
+                  <CheckCircle
+                    className="text-green-500 flex-shrink-0 mt-1"
+                    size={24}
+                  />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">
+                      eerlijke prijzen
+                    </h3>
+                    <p className="text-gray-600">
+                      transparante offertes zonder verborgen kosten. wat we
+                      afspreken, dat voeren we uit.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <CheckCircle
+                    className="text-green-500 flex-shrink-0 mt-1"
+                    size={24}
+                  />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">
+                      vakmanschap
+                    </h3>
+                    <p className="text-gray-600">
+                      jarenlange ervaring in stucwerk. van nieuwbouw tot
+                      renovatie, wij leveren kwaliteit.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <CheckCircle
+                    className="text-green-500 flex-shrink-0 mt-1"
+                    size={24}
+                  />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">
+                      snel en netjes
+                    </h3>
+                    <p className="text-gray-600">
+                      we werken efficiënt en houden de werkplek netjes. overlast
+                      houden we tot een minimum.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <CheckCircle
+                    className="text-green-500 flex-shrink-0 mt-1"
+                    size={24}
+                  />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">
+                      persoonlijk advies
+                    </h3>
+                    <p className="text-gray-600">
+                      we denken graag met je mee over de beste oplossing voor
+                      jouw situatie.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-primary to-primary/90 text-white p-8 rounded-2xl text-center">
+                <h3 className="text-2xl font-bold mb-4">
+                  klaar voor een offerte op maat?
                 </h3>
-
-                <div className="space-y-4 mb-6">
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-gray-700">
-                      spackspuiten plafonds (60m²)
-                    </span>
-                    <span className="font-semibold">60 × €10 = €600</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-gray-700">
-                      traditioneel stucwerk wanden (30m²)
-                    </span>
-                    <span className="font-semibold">30 × €18 = €540</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-gray-700">
-                      schuurwerk voorbereiding
-                    </span>
-                    <span className="font-semibold">€300</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-gray-700">
-                      afplakken en beschermen
-                    </span>
-                    <span className="font-semibold">€150</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-gray-400">
-                    <span className="text-gray-700">materialen</span>
-                    <span className="font-semibold">inclusief</span>
-                  </div>
-
-                  <div className="flex justify-between items-center pt-4">
-                    <span className="text-xl font-bold text-gray-900">
-                      totaal
-                    </span>
-                    <span className="text-3xl font-bold text-primary">
-                      €1.590
-                    </span>
-                  </div>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg">
-                  <p className="text-sm text-gray-600">
-                    <strong>oplevering:</strong> binnen 3-4 werkdagen
-                    <br />
-                    <strong>garantie:</strong> 2 jaar op materiaal en uitvoering
-                    <br />
-                    <strong>inclusief:</strong> alle materialen, opruimen,
-                    afvoer
-                  </p>
+                <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+                  vertel ons over je project en ontvang binnen 24 uur een
+                  vrijblijvende offerte. of bel ons direct voor advies.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+                  >
+                    <Calculator size={20} />
+                    offerte aanvragen
+                  </Link>
+                  <a
+                    href="tel:0612345678"
+                    className="inline-flex items-center justify-center gap-2 bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark/90 transition-colors border-2 border-white/20"
+                  >
+                    <Phone size={20} />
+                    direct bellen
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA naar lokale pages */}
-        <section className="py-20 bg-gradient-to-br from-primary to-blue-700 text-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                wil je weten wat het voor jouw project kost?
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
-                vraag een gratis, vrijblijvende offerte aan. wij komen graag bij
-                je langs voor een nauwkeurige opname en geven binnen 24 uur een
-                scherpe prijs.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Link
-                  href="/locaties/stucwerk-amsterdam"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-xl"
-                >
-                  offerte aanvragen amsterdam
-                  <ArrowRight size={20} />
-                </Link>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all"
-                >
-                  andere locatie
-                  <ArrowRight size={20} />
-                </Link>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <CheckCircle className="mx-auto mb-2" size={32} />
-                  <p className="font-semibold">gratis opname & offerte</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <CheckCircle className="mx-auto mb-2" size={32} />
-                  <p className="font-semibold">binnen 24u antwoord</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <CheckCircle className="mx-auto mb-2" size={32} />
-                  <p className="font-semibold">15+ jaar ervaring</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Related links */}
+        {/* FAQ */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                lees ook:
-              </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                <Link
-                  href="/diensten/stucwerk"
-                  className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
-                >
-                  <h4 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                    alles over stucwerk →
-                  </h4>
-                  <p className="text-gray-600 text-sm">
-                    ontdek welke soorten stucwerk er zijn en wat het beste bij
-                    jouw project past
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                veelgestelde vragen over stucwerk prijzen
+              </h2>
+
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    waarom krijg ik geen vaste prijs per m²?
+                  </h3>
+                  <p className="text-gray-700">
+                    elke klus is anders. de staat van je muren, de hoogte van je
+                    plafonds, de bereikbaarheid, het type stucwerk en de
+                    gewenste afwerking maken allemaal verschil. daarom werken we
+                    met projectgebonden offertes die rekening houden met jouw
+                    specifieke situatie.
                   </p>
-                </Link>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    is een offerte vrijblijvend?
+                  </h3>
+                  <p className="text-gray-700">
+                    ja, onze offertes zijn altijd vrijblijvend. je zit nergens
+                    aan vast en kunt rustig verschillende aanbiedingen
+                    vergelijken.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    hoe snel kan ik een offerte verwachten?
+                  </h3>
+                  <p className="text-gray-700">
+                    na je aanvraag nemen we binnen 24 uur contact op om een
+                    afspraak voor een bezichtiging te maken. na de bezichtiging
+                    ontvang je meestal binnen enkele dagen een uitgebreide
+                    offerte.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    zit btw bij de prijs inbegrepen?
+                  </h3>
+                  <p className="text-gray-700">
+                    in onze offertes geven we altijd duidelijk aan of prijzen
+                    inclusief of exclusief btw zijn. voor particulieren werken
+                    we meestal inclusief btw.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    wat is goedkoper: spackspuiten of traditioneel stucwerk?
+                  </h3>
+                  <p className="text-gray-700">
+                    spackspuiten is meestal voordeliger bij grote oppervlakken
+                    omdat het sneller gaat. voor kleine ruimtes of renovatie kan
+                    traditioneel stucwerk echter de betere keuze zijn. we
+                    adviseren je graag over wat het beste bij jouw project past.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    komen er nog verborgen kosten bij?
+                  </h3>
+                  <p className="text-gray-700">
+                    nee, bij mkhbouw werk je met transparante offertes. alle
+                    werkzaamheden en kosten staan duidelijk vermeld. alleen als
+                    er tijdens het werk onverwachte zaken naar voren komen
+                    (bijvoorbeeld verborgen schade) overleggen we dit eerst met
+                    je.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related articles */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold text-gray-900 mb-8">
+                lees ook
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
                 <Link
                   href="/diensten/spackspuiten"
-                  className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
+                  className="group bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all"
                 >
-                  <h4 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                    wat is spackspuiten? →
-                  </h4>
-                  <p className="text-gray-600 text-sm">
-                    leer meer over deze moderne stucwerk techniek en de
-                    voordelen
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                    alles over spackspuiten
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    ontdek de voordelen van spackspuiten en wanneer deze
+                    techniek de beste keuze is.
                   </p>
+                  <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
+                    lees meer <ArrowRight size={18} />
+                  </span>
+                </Link>
+
+                <Link
+                  href="/diensten/sierpleister"
+                  className="group bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all"
+                >
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                    sierpleister voor een unieke uitstraling
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    decoratieve afwerking met structuur en karakter voor je
+                    interieur.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
+                    lees meer <ArrowRight size={18} />
+                  </span>
                 </Link>
               </div>
             </div>
