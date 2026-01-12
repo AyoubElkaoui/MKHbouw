@@ -6,9 +6,9 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "blog & gidsen - tips over stucwerk en schilderwerk | mkhbouw",
+  title: "blog & gidsen 2026 - tips over stucwerk en schilderwerk | mkhbouw",
   description:
-    "lees onze uitgebreide gidsen over stucwerk, schilderwerk en renovatie. praktische tips, prijsinformatie en vakkundige adviezen van mkhbouw.",
+    "lees onze uitgebreide gidsen over stucwerk, schilderwerk en renovatie in 2026. praktische tips, prijsinformatie en vakkundige adviezen van mkhbouw.",
   keywords: [
     "stucwerk blog",
     "schilderwerk tips",
@@ -21,57 +21,57 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
-    title: "wat kost stucwerk in 2024?",
+    title: "wat kost stucwerk in 2026?",
     excerpt:
-      "complete prijsoverzicht voor spackspuiten, traditioneel stucwerk en sierpleister. inclusief voorbeeldberekeningen en bespaartips.",
+      "ontdek welke factoren de prijs van stucwerk bepalen en vraag een vrijblijvende offerte aan. geen vaste prijzen maar wel transparant advies.",
     slug: "wat-kost-stucwerk",
     category: "prijzen",
     readTime: "8 min",
-    date: "2024",
+    date: "2026",
     image:
       "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop",
   },
   {
-    title: "wat kost schilderwerk per m²?",
+    title: "wat kost schilderwerk in 2026?",
     excerpt:
-      "ontdek de prijzen voor binnen- en buitenschilderwerk. van muren tot kozijnen, alle kosten op een rij met praktische tips.",
+      "benieuwd naar de kosten van schilderwerk? ontdek welke factoren de prijs bepalen en vraag een vrijblijvende offerte aan.",
     slug: "wat-kost-schilderwerk",
     category: "prijzen",
     readTime: "7 min",
-    date: "2024",
+    date: "2026",
     image:
       "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2670&auto=format&fit=crop",
   },
   {
-    title: "verschil tussen spackspuiten en traditioneel stucwerk",
+    title: "spackspuiten vs traditioneel stucwerk",
     excerpt:
-      "welke stucwerk techniek past bij jouw project? vergelijk voordelen, nadelen, prijzen en resultaten van beide methoden.",
+      "wat is het verschil tussen spackspuiten en traditioneel stucwerk? ontdek de voor- en nadelen en welke techniek het beste bij jouw project past.",
     slug: "verschil-spackspuiten-traditioneel",
     category: "technieken",
     readTime: "6 min",
-    date: "2024",
+    date: "2026",
     image:
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop",
   },
   {
-    title: "hoe lang duurt een stucwerk project?",
+    title: "hoe lang duurt stucwerk?",
     excerpt:
-      "planning maken voor stucwerk? lees hoelang verschillende stucwerk projecten duren en wat de droogtijd is.",
+      "benieuwd hoe lang stucwerk duurt? ontdek wat de doorlooptijd bepaalt en plan je verbouwing slim. expert advies van mkhbouw.",
     slug: "hoe-lang-duurt-stucwerk",
     category: "planning",
-    readTime: "5 min",
-    date: "2024",
+    readTime: "6 min",
+    date: "2026",
     image:
       "https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2669&auto=format&fit=crop",
   },
   {
-    title: "stucwerk scheuren repareren - complete gids",
+    title: "stucwerk scheuren repareren: complete gids",
     excerpt:
-      "last van scheuren in je stucwerk? ontdek de oorzaken en leer hoe je scheuren professioneel kunt herstellen.",
+      "last van scheuren in je stucwerk? ontdek de oorzaken, oplossingen en wanneer je een professional moet inschakelen.",
     slug: "stucwerk-scheuren-repareren",
     category: "onderhoud",
-    readTime: "7 min",
-    date: "2024",
+    readTime: "8 min",
+    date: "2026",
     image:
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop",
   },
