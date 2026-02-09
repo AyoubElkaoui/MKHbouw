@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
 }
 
 @theme inline {
@@ -43,4 +43,26 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(0, 22, 122, 0.12);
+  color: #00167a;
+}
+
+/* Smooth focus transitions */
+*:focus-visible {
+  outline: 2px solid #00167a;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Grid Background Pattern */
+.bg-grid-white\/\[0\.02\] {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 }

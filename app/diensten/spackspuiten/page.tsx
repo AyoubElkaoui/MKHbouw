@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { CheckCircle, ArrowLeft, Phone, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowLeft, Phone, ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -31,37 +31,126 @@ export default function SpackspuitenPage() {
       <Navigation />
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 bg-slate-50 overflow-hidden">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <Link
-                href="/diensten"
-                className="inline-flex items-center gap-2 text-primary hover:text-blue-700 transition-colors mb-6 font-semibold"
+        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop"
+              alt="Professioneel spackspuiten MKH Bouw"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
+          </div>
+          <div className="absolute top-20 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-32">
+            <div className="max-w-3xl">
+              {/* Back link */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
               >
-                <ArrowLeft className="w-4 h-4" />
-                Terug naar diensten
-              </Link>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
-                Professioneel <span className="text-primary">Spackspuiten</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                <Link
+                  href="/diensten"
+                  className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-6 font-medium"
+                >
+                  <ArrowLeft className="w-4 h-4" /> Terug naar diensten
+                </Link>
+              </motion.div>
+
+              {/* Badge */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.05 }}
+                className="mb-6"
+              >
+                <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-5 py-2.5 rounded-full text-sm font-medium border border-white/20">
+                  <Star size={14} className="fill-accent text-accent" />{" "}
+                  Specialist in Wandafwerking
+                </span>
+              </motion.div>
+
+              {/* Title with accent underline */}
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]"
+              >
+                Professioneel{" "}
+                <span className="relative">
+                  <span className="relative z-10">Spackspuiten</span>
+                  <span className="absolute bottom-2 left-0 right-0 h-3 bg-accent/30 -z-0 rounded" />
+                </span>
+              </motion.h1>
+
+              {/* Description */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-lg sm:text-xl text-white/80 mb-10 leading-relaxed max-w-2xl"
+              >
                 Snelle, efficiënte wandafwerking voor nieuwbouw en renovatie
                 door heel Nederland. Ideaal voor zakelijke en particuliere
                 projecten.
-              </p>
-              <a
-                href="tel:+31684794108"
-                className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105"
+              </motion.p>
+
+              {/* CTA */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="flex flex-wrap gap-4"
               >
-                <Phone className="w-5 h-5" />
-                Direct contact: 06 84794108
-              </a>
-            </motion.div>
+                <a
+                  href="#contact-cta"
+                  className="group inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-accent-600 transition-all shadow-xl shadow-accent/25"
+                >
+                  Gratis Offerte{" "}
+                  <ArrowRight
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </a>
+                <a
+                  href="tel:+31684794108"
+                  className="group inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm text-white border-2 border-white/25 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 hover:border-white/40 transition-all"
+                >
+                  <Phone size={18} /> 06 84794108
+                </a>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Stats Bar */}
+          <div className="absolute bottom-0 left-0 right-0 z-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="bg-white/10 backdrop-blur-md border border-white/20 rounded-t-2xl p-6 grid grid-cols-2 md:grid-cols-4 gap-6"
+              >
+                {[
+                  { value: "500+", label: "Projecten voltooid" },
+                  { value: "15+", label: "Jaar ervaring" },
+                  { value: "100%", label: "Klanttevredenheid" },
+                  { value: "24u", label: "Reactietijd" },
+                ].map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-2xl md:text-3xl font-bold text-accent">
+                      {stat.value}
+                    </div>
+                    <div className="text-sm text-white/70">{stat.label}</div>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
           </div>
         </section>
 
@@ -76,11 +165,16 @@ export default function SpackspuitenPage() {
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
                 >
-                  <span className="text-primary font-semibold text-sm uppercase tracking-wide">
+                  <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
                     Wat is spackspuiten?
                   </span>
                   <h2 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-gray-900">
-                    Moderne wandafwerking technieken
+                    Moderne{" "}
+                    <span className="relative">
+                      <span className="relative z-10">wandafwerking</span>
+                      <span className="absolute bottom-1 left-0 right-0 h-3 bg-accent/20 -z-0 rounded" />
+                    </span>{" "}
+                    technieken
                   </h2>
                   <p className="text-xl text-gray-700 leading-relaxed mb-6">
                     Spackspuiten, ook wel spuitpleisteren genoemd, is een
@@ -136,22 +230,28 @@ export default function SpackspuitenPage() {
                 className="mb-24"
               >
                 <div className="text-center mb-12">
-                  <span className="text-primary font-semibold text-sm uppercase tracking-wide">
+                  <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
                     Voordelen
                   </span>
                   <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3 mb-4">
-                    Waarom kiezen voor spackspuiten?
+                    Waarom kiezen voor{" "}
+                    <span className="relative">
+                      <span className="relative z-10">spackspuiten</span>
+                      <span className="absolute bottom-1 left-0 right-0 h-3 bg-accent/20 -z-0 rounded" />
+                    </span>
+                    ?
                   </h2>
-                  <div className="w-24 h-1 bg-primary mx-auto"></div>
+                  <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {benefits.map((benefit, index) => (
                     <div
                       key={index}
-                      className="flex items-start gap-4 bg-blue-50 p-6 rounded-2xl border border-blue-100 hover:shadow-xl transition-all transform hover:-translate-y-1"
+                      className="group relative flex items-start gap-4 bg-gradient-to-br from-primary/5 to-accent/5 p-6 rounded-2xl border border-primary/10 hover:shadow-xl transition-all transform hover:-translate-y-1 overflow-hidden"
                     >
-                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                      <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                       <span className="text-gray-700 leading-relaxed">
                         {benefit}
                       </span>
@@ -169,6 +269,9 @@ export default function SpackspuitenPage() {
                 className="mb-24"
               >
                 <div className="text-center mb-12">
+                  <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+                    Toepassingen
+                  </span>
                   <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
                     Toepassingsmogelijkheden
                   </h2>
@@ -180,11 +283,12 @@ export default function SpackspuitenPage() {
                   {applications.map((app, index) => (
                     <div
                       key={index}
-                      className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-slate-100 relative overflow-hidden"
+                      className="group relative bg-gradient-to-br from-primary/5 to-accent/5 p-6 rounded-2xl border border-primary/10 hover:shadow-xl transition-all overflow-hidden"
                     >
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                       <div className="relative z-10 flex items-start gap-3">
-                        <CheckCircle className="w-6 h-6 text-primary  flex-shrink-0 mt-1 transition-colors" />
-                        <p className="text-gray-700  font-medium transition-colors">
+                        <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1 transition-colors" />
+                        <p className="text-gray-700 font-medium transition-colors">
                           {app}
                         </p>
                       </div>
@@ -202,6 +306,9 @@ export default function SpackspuitenPage() {
                 className="mb-16"
               >
                 <div className="text-center mb-12">
+                  <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+                    Werkwijze
+                  </span>
                   <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
                     Ons werkproces
                   </h2>
@@ -233,7 +340,7 @@ export default function SpackspuitenPage() {
                     },
                   ].map((item, index) => (
                     <div key={index} className="text-center group">
-                      <div className="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4 shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all">
+                      <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4 shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all">
                         {item.step}
                       </div>
                       <h3 className="font-bold text-gray-900 mb-2 text-lg">
@@ -249,116 +356,61 @@ export default function SpackspuitenPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-primary relative overflow-hidden">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-              <div className="bg-white rounded-3xl p-12 md:p-16 shadow-2xl border-4 border-white">
-                <div className="text-center mb-12">
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6">
-                    Interesse in professioneel spackspuiten?
-                  </h2>
-                  <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Vraag vandaag nog een{" "}
-                    <span className="text-primary font-bold">
-                      vrijblijvende offerte
-                    </span>{" "}
-                    aan op maat
-                  </p>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
-                  <Link
-                    href="/contact"
-                    className="group inline-flex items-center justify-center bg-primary text-white px-10 py-5 rounded-xl hover:bg-blue-700 transition-all font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transform"
-                  >
-                    <span>Vraag Offerte Aan</span>
-                    <svg
-                      className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </Link>
-                  <a
-                    href="tel:+31684794108"
-                    className="group inline-flex items-center justify-center bg-white text-primary border-3 border-primary px-10 py-5 rounded-xl hover:bg-primary hover:text-white transition-all font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transform"
-                  >
-                    <svg
-                      className="w-6 h-6 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                      />
-                    </svg>
-                    <span>06 84794108</span>
-                  </a>
-                </div>
-
-                <div className="flex flex-wrap justify-center gap-8 pt-8 border-t-2 border-gray-100">
-                  <div className="flex items-center gap-2">
-                    <svg
-                      className="w-6 h-6 text-primary"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-gray-700 font-semibold">
-                      Binnen 24 uur reactie
-                    </span>
+        <section id="contact-cta" className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-primary/90" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Interesse in professioneel spackspuiten?
+              </h2>
+              <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+                Vraag vandaag nog een vrijblijvende offerte aan op maat
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+                <Link
+                  href="/contact"
+                  className="group inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4.5 rounded-xl font-bold text-lg hover:bg-accent-600 transition-all shadow-xl shadow-accent/25 hover:shadow-2xl hover:shadow-accent/30 hover:-translate-y-0.5"
+                >
+                  Vraag Offerte Aan{" "}
+                  <ArrowRight
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </Link>
+                <a
+                  href="tel:+31684794108"
+                  className="group inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm text-white border-2 border-white/25 px-8 py-4.5 rounded-xl font-bold text-lg hover:bg-white/20 hover:border-white/40 transition-all"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center">
+                    <Phone size={18} />
                   </div>
-                  <div className="flex items-center gap-2">
-                    <svg
-                      className="w-6 h-6 text-primary"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-gray-700 font-semibold">
-                      Geen verborgen kosten
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <svg
-                      className="w-6 h-6 text-primary"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-gray-700 font-semibold">
-                      15+ jaar ervaring
-                    </span>
-                  </div>
-                </div>
+                  06 84794108
+                </a>
               </div>
-            </div>
+              <div className="flex flex-wrap justify-center gap-6">
+                {[
+                  "Binnen 24 uur reactie",
+                  "Geen verborgen kosten",
+                  "15+ jaar ervaring",
+                ].map((text) => (
+                  <div
+                    key={text}
+                    className="flex items-center gap-2 text-white/80"
+                  >
+                    <CheckCircle size={16} className="text-accent" />
+                    <span className="text-sm font-medium">{text}</span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </section>
       </div>

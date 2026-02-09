@@ -2,116 +2,115 @@
 
 import Link from "next/link";
 import { Phone, ArrowRight, CheckCircle, Zap } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
-    <section className="relative py-20 bg-slate-900 overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        ></div>
-      </div>
+    <section className="relative py-24 overflow-hidden">
+      {/* Full background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-700 to-primary-900" />
 
-      {/* Accent shapes */}
-      <div className="absolute top-10 right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl"></div>
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
+      <div className="absolute top-20 right-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-60 h-60 bg-white/5 rounded-full blur-3xl" />
+
+      {/* Grid pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='1'%3E%3Cpath d='M0 0h1v40H0zM40 0v1H0V0z'/%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Highlighted badge */}
-          <div className="text-center mb-6">
-            <span className="inline-flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg">
-              <Zap className="w-4 h-4" fill="currentColor" />
-              gratis offerte op maat
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-8"
+          >
+            <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-6 py-2.5 rounded-full text-sm font-semibold border border-white/15">
+              <Zap className="w-4 h-4 text-accent" fill="currentColor" />
+              Gratis & Vrijblijvend
             </span>
-          </div>
+          </motion.div>
 
-          {/* Main card with glow */}
-          <div className="relative">
-            <div className="absolute -inset-0.5 bg-primary rounded-2xl opacity-75 blur"></div>
-            <div className="relative bg-white rounded-2xl p-10 md:p-12 shadow-2xl">
-              {/* Header */}
-              <div className="text-center mb-10">
-                <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-                  start vandaag nog
-                </h2>
-                <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                  ontvang binnen{" "}
-                  <span className="font-bold text-primary">24 uur</span> een
-                  persoonlijke offerte. ervaren vakmanschap, eerlijke prijzen.
-                </p>
-              </div>
+          {/* Heading */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+          >
+            Start Vandaag Nog
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10"
+          >
+            Ontvang binnen <span className="font-bold text-white">24 uur</span>{" "}
+            een persoonlijke offerte. Ervaren vakmanschap, eerlijke prijzen.
+          </motion.p>
 
-              {/* Buttons with enhanced styling */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-                <Link
-                  href="/contact"
-                  className="group relative inline-flex items-center justify-center bg-primary text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 overflow-hidden"
-                >
-                  <span className="relative z-10 flex items-center">
-                    vraag offerte aan
-                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Link>
+          {/* Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-14"
+          >
+            <Link
+              href="/contact"
+              className="group inline-flex items-center justify-center bg-accent text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-accent-600 transition-all shadow-xl shadow-accent/25 hover:shadow-2xl hover:shadow-accent/30 hover:-translate-y-0.5"
+            >
+              Vraag Offerte Aan
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
 
-                <a
-                  href="tel:+31684794108"
-                  className="group inline-flex items-center justify-center bg-slate-100 text-gray-900 border-2 border-slate-200 px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:border-primary transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-                >
-                  <Phone className="mr-3 w-5 h-5 group-hover:rotate-12 transition-transform" />
-                  <div className="text-left">
-                    <div className="text-xs text-gray-500 font-normal -mb-0.5">
-                      of bel direct
-                    </div>
-                    <div>06 84794108</div>
-                  </div>
-                </a>
-              </div>
-
-              {/* Enhanced trust indicators */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 border-t-2 border-gray-100">
-                <div className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl">
-                  <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-gray-900 text-sm">
-                      24u reactie
-                    </div>
-                    <div className="text-xs text-gray-600">gegarandeerd</div>
-                  </div>
+            <a
+              href="tel:+31684794108"
+              className="group inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/20 hover:border-white/30 transition-all"
+            >
+              <Phone className="mr-3 w-5 h-5 group-hover:rotate-12 transition-transform" />
+              <div className="text-left">
+                <div className="text-xs text-white/60 font-normal -mb-0.5">
+                  Of bel direct
                 </div>
-
-                <div className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl">
-                  <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-gray-900 text-sm">
-                      transparant
-                    </div>
-                    <div className="text-xs text-gray-600">vaste prijzen</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl">
-                  <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-gray-900 text-sm">
-                      15+ jaar
-                    </div>
-                    <div className="text-xs text-gray-600">ervaring</div>
-                  </div>
-                </div>
+                <div>06 84794108</div>
               </div>
-            </div>
-          </div>
+            </a>
+          </motion.div>
+
+          {/* Trust indicators */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="flex flex-wrap justify-center gap-6 md:gap-10"
+          >
+            {[
+              "24 uur reactie gegarandeerd",
+              "Transparante vaste prijzen",
+              "15+ jaar ervaring",
+            ].map((text) => (
+              <div
+                key={text}
+                className="flex items-center gap-2 text-white/70 text-sm"
+              >
+                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                <span>{text}</span>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

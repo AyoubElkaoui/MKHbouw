@@ -2,40 +2,46 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+    <footer className="relative bg-gray-950 text-white overflow-hidden">
+      {/* Top accent line */}
+      <div className="h-1 bg-gradient-to-r from-primary via-accent to-primary" />
+
+      {/* Decorative element */}
+      <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 relative z-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
-          <div>
+          <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/logo.png"
-                alt="mkhbouw"
-                width={140}
-                height={70}
+                alt="MKH Bouw"
+                width={160}
+                height={160}
                 className="h-14 w-auto brightness-0 invert"
               />
             </Link>
-            <p className="text-gray-400 leading-relaxed mb-6">
-              specialist in stucwerk, schilderwerk en complete renovaties.
-              actief door heel Nederland sinds 2008.
+            <p className="text-gray-400 leading-relaxed mb-6 text-sm">
+              Specialist in stucwerk, schilderwerk en complete renovaties.
+              Actief door heel Nederland sinds 2008.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary flex items-center justify-center transition-all hover:-translate-y-0.5"
               >
                 <span className="sr-only">Facebook</span>
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -46,11 +52,11 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary flex items-center justify-center transition-all hover:-translate-y-0.5"
               >
                 <span className="sr-only">Instagram</span>
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -62,127 +68,106 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">snelle links</h3>
+            <h3 className="font-bold text-sm uppercase tracking-wider text-white mb-6">
+              Snelle Links
+            </h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/over-ons"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  over ons
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/diensten"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  diensten
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  contact
-                </Link>
-              </li>
+              {[
+                { href: "/", label: "Home" },
+                { href: "/over-ons", label: "Over Ons" },
+                { href: "/diensten", label: "Diensten" },
+                { href: "/blog", label: "Blog" },
+                { href: "/contact", label: "Contact" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center gap-1 text-gray-400 hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                    <ArrowUpRight
+                      size={12}
+                      className="opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Diensten */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">diensten</h3>
+            <h3 className="font-bold text-sm uppercase tracking-wider text-white mb-6">
+              Diensten
+            </h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/diensten/stucwerk"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  stucwerk
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/diensten/schilderwerk"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  schilderwerk
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/diensten/renovatie"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  renovatie
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/diensten/spackspuiten"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  spackspuiten
-                </Link>
-              </li>
+              {[
+                { href: "/diensten/stucwerk", label: "Stucwerk" },
+                { href: "/diensten/schilderwerk", label: "Schilderwerk" },
+                { href: "/diensten/renovatie", label: "Renovatie" },
+                { href: "/diensten/spackspuiten", label: "Spackspuiten" },
+                { href: "/diensten/sierpleister", label: "Sierpleister" },
+                { href: "/diensten/behangen", label: "Behangen" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center gap-1 text-gray-400 hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                    <ArrowUpRight
+                      size={12}
+                      className="opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">contact</h3>
-            <ul className="space-y-4">
+            <h3 className="font-bold text-sm uppercase tracking-wider text-white mb-6">
+              Contact
+            </h3>
+            <ul className="space-y-5">
               <li className="flex items-start gap-3">
-                <Phone size={20} className="text-accent flex-shrink-0 mt-1" />
+                <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Phone size={16} className="text-accent" />
+                </div>
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">bel ons</p>
+                  <p className="text-gray-500 text-xs mb-0.5">Bel ons</p>
                   <a
                     href="tel:+31684794108"
-                    className="text-white hover:text-accent transition-colors font-medium"
+                    className="text-white hover:text-accent transition-colors font-medium text-sm"
                   >
                     06 84794108
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail size={20} className="text-accent flex-shrink-0 mt-1" />
+                <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Mail size={16} className="text-accent" />
+                </div>
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">email ons</p>
+                  <p className="text-gray-500 text-xs mb-0.5">Email ons</p>
                   <a
                     href="mailto:info@mkhbouw.nl"
-                    className="text-white hover:text-accent transition-colors font-medium"
+                    className="text-white hover:text-accent transition-colors font-medium text-sm"
                   >
                     info@mkhbouw.nl
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={20} className="text-accent flex-shrink-0 mt-1" />
+                <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <MapPin size={16} className="text-accent" />
+                </div>
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">locatie</p>
-                  <p className="text-white font-medium">
-                    Amsterdam
-                    <span className="block text-gray-400 text-sm font-normal">
-                      actief door heel Nederland
-                    </span>
+                  <p className="text-gray-500 text-xs mb-0.5">Locatie</p>
+                  <p className="text-white font-medium text-sm">Amsterdam</p>
+                  <p className="text-gray-500 text-xs">
+                    Actief door heel Nederland
                   </p>
                 </div>
               </li>
@@ -193,21 +178,21 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
-              {currentYear} mkhbouw. alle rechten voorbehouden.
+            <p className="text-gray-500 text-sm">
+              &copy; {currentYear} MKH Bouw. Alle rechten voorbehouden.
             </p>
             <div className="flex gap-6">
               <Link
                 href="/privacy"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
+                className="text-gray-500 hover:text-white text-sm transition-colors"
               >
-                privacy
+                Privacy
               </Link>
               <Link
                 href="/algemene-voorwaarden"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
+                className="text-gray-500 hover:text-white text-sm transition-colors"
               >
-                algemene voorwaarden
+                Algemene Voorwaarden
               </Link>
             </div>
           </div>
