@@ -61,7 +61,7 @@ export default function BehangenPage() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669&auto=format&fit=crop"
+              src="https://plus.unsplash.com/premium_photo-1661963369563-1e00af9d8b35?q=80&w=2670&auto=format&fit=crop"
               alt="Professioneel behangwerk MKH Bouw"
               fill
               className="object-cover"

@@ -417,19 +417,19 @@ export default function StucwerkAmsterdam() {
               <div className="grid md:grid-cols-3 gap-8">
                 {[
                   {
-                    src: "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop",
+                    src: "https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop",
                     alt: "stucwerk project amsterdam",
                     title: "grachtenpand amsterdam centrum",
                     desc: "complete stucwerk renovatie van monumentaal pand",
                   },
                   {
-                    src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop",
+                    src: "https://images.unsplash.com/photo-1745092707630-c00ef0a006c4?q=80&w=2670&auto=format&fit=crop",
                     alt: "spackspuiten amsterdam",
                     title: "nieuwbouw amsterdam noord",
                     desc: "spackspuiten 15 appartementen, nieuwbouwproject",
                   },
                   {
-                    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop",
+                    src: "https://images.unsplash.com/photo-1534162057773-55bd4a4b5ae1?q=80&w=2670&auto=format&fit=crop",
                     alt: "sierpleister amsterdam",
                     title: "woonhuis amsterdam zuid",
                     desc: "sierpleister in woonkamer en hal, luxe afwerking",

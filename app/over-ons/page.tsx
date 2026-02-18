@@ -40,7 +40,7 @@ export default function OverOns() {
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop"
+              src="https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop"
               alt="MKH Bouw team"
               fill
               className="object-cover"
@@ -204,7 +204,7 @@ export default function OverOns() {
                   <div className="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity" />
                   <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop"
+                      src="https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop"
                       alt="Professional construction team MKH Bouw Amsterdam"
                       width={600}
                       height={500}
@@ -234,8 +234,8 @@ export default function OverOns() {
                   <div className="absolute -inset-4 bg-gradient-to-r from-accent to-primary rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity" />
                   <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2670&auto=format&fit=crop"
-                      alt="Quality construction work Amsterdam"
+                      src="https://plus.unsplash.com/premium_photo-1683120658096-5f9e31276ec8?q=80&w=2670&auto=format&fit=crop"
+                      alt="Renovatie werkzaamheden MKH Bouw Amsterdam"
                       width={600}
                       height={500}
                       className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"

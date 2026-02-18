@@ -34,7 +34,7 @@ export default function SpackspuitenPage() {
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1745092707630-c00ef0a006c4?q=80&w=2670&auto=format&fit=crop"
               alt="Professioneel spackspuiten MKH Bouw"
               fill
               className="object-cover"

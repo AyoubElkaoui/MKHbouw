@@ -59,7 +59,7 @@ export default function SloopwerkPage() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2574&auto=format&fit=crop"
+              src="https://plus.unsplash.com/premium_photo-1678454428455-25e6dd839efb?q=80&w=2670&auto=format&fit=crop"
               alt="Professioneel sloopwerk MKH Bouw"
               fill
               className="object-cover"
@@ -262,7 +262,7 @@ export default function SloopwerkPage() {
                   <div className="absolute -inset-4 bg-gradient-to-br from-primary to-accent rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
                   <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2670&auto=format&fit=crop"
+                      src="https://plus.unsplash.com/premium_photo-1678454428455-25e6dd839efb?q=80&w=2670&auto=format&fit=crop"
                       alt="Professioneel sloopwerk MKH Bouw Amsterdam"
                       width={600}
                       height={500}

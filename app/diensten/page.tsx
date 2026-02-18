@@ -30,7 +30,7 @@ const services = [
     fullDescription:
       "Wij bieden professioneel spackspuitwerk voor zowel plafonds als wanden. Met moderne apparatuur zorgen we voor een perfect egaal eindresultaat dat direct sausklaar is.",
     image:
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1745092707630-c00ef0a006c4?q=80&w=2670&auto=format&fit=crop",
   },
   {
     icon: Hammer,
@@ -39,7 +39,7 @@ const services = [
     fullDescription:
       "Vakkundig stucwerk dat direct sausklaar of behangklaar wordt opgeleverd. Wij werken met hoogwaardige materialen voor duurzaam resultaat, geschikt voor binnen en buiten.",
     image:
-      "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop",
   },
   {
     icon: PaintBucket,
@@ -48,7 +48,7 @@ const services = [
     fullDescription:
       "Geef uw woning of bedrijfspand een luxe uitstraling met sierpleister. Verkrijgbaar in diverse structuren en kleuren voor een uniek effect dat jarenlang mooi blijft.",
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1534162057773-55bd4a4b5ae1?q=80&w=2670&auto=format&fit=crop",
   },
   {
     icon: Brush,
@@ -57,7 +57,7 @@ const services = [
     fullDescription:
       "Professioneel schuurwerk als voorbereiding voor schilderwerk of stucwerk. Wij zorgen voor een perfect glad oppervlak met moderne schuurapparatuur.",
     image:
-      "https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2669&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1682597001129-42e04d67253f?q=80&w=2670&auto=format&fit=crop",
   },
   {
     icon: PaintBucket,
@@ -66,7 +66,7 @@ const services = [
     fullDescription:
       "Complete schilderwerken voor binnen en buiten. Van kozijnen tot complete woningen en bedrijfspanden, wij leveren vakwerk met oog voor detail en duurzame kwaliteit.",
     image:
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2670&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1679018179962-06922435f6bc?q=80&w=2670&auto=format&fit=crop",
   },
   {
     icon: Wallpaper,
@@ -75,7 +75,7 @@ const services = [
     fullDescription:
       "Deskundig behangwerk met perfecte naadaansluiting. Wij werken met alle soorten behang van klassiek tot modern, inclusief glasvezelbehang en vliesbehang.",
     image:
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661963369563-1e00af9d8b35?q=80&w=2670&auto=format&fit=crop",
   },
   {
     icon: Trash2,
@@ -84,7 +84,7 @@ const services = [
     fullDescription:
       "Professioneel sloopwerk met oog voor veiligheid. Wij verzorgen ook de afvoer van sloopafval conform regelgeving, geschikt voor woningen en bedrijfspanden.",
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2574&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1678454428455-25e6dd839efb?q=80&w=2670&auto=format&fit=crop",
   },
   {
     icon: Home,
@@ -93,7 +93,7 @@ const services = [
     fullDescription:
       "Totaalrenovaties voor uw woning of bedrijfspand. Van ontwerp tot oplevering, wij begeleiden u door het hele proces met persoonlijk advies en transparante communicatie.",
     image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2531&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1675601690595-41b44f3cacd7?q=80&w=2670&auto=format&fit=crop",
   },
 ];
 
@@ -113,7 +113,7 @@ export default function Diensten() {
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2531&auto=format&fit=crop"
+              src="https://plus.unsplash.com/premium_photo-1675601690595-41b44f3cacd7?q=80&w=2670&auto=format&fit=crop"
               alt="MKH Bouw diensten"
               fill
               className="object-cover"

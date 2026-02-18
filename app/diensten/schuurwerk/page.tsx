@@ -50,7 +50,7 @@ export default function SchuurwerkPage() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2669&auto=format&fit=crop"
+              src="https://plus.unsplash.com/premium_photo-1682597001129-42e04d67253f?q=80&w=2670&auto=format&fit=crop"
               alt="Professioneel schuurwerk MKH Bouw"
               fill
               className="object-cover"

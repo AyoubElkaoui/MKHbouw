@@ -24,7 +24,7 @@ const blogPosts = [
     readTime: "8 min",
     date: "2026",
     image:
-      "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop",
   },
   {
     title: "Wat Kost Schilderwerk in 2026?",
@@ -35,7 +35,7 @@ const blogPosts = [
     readTime: "7 min",
     date: "2026",
     image:
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2670&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1679018179962-06922435f6bc?q=80&w=2670&auto=format&fit=crop",
   },
   {
     title: "Spackspuiten vs Traditioneel Stucwerk",
@@ -46,7 +46,7 @@ const blogPosts = [
     readTime: "6 min",
     date: "2026",
     image:
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1745092707630-c00ef0a006c4?q=80&w=2670&auto=format&fit=crop",
   },
   {
     title: "Hoe Lang Duurt Stucwerk?",
@@ -57,7 +57,7 @@ const blogPosts = [
     readTime: "6 min",
     date: "2026",
     image:
-      "https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2669&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1675601690595-41b44f3cacd7?q=80&w=2670&auto=format&fit=crop",
   },
   {
     title: "Stucwerk Scheuren Repareren: Complete Gids",
@@ -68,7 +68,7 @@ const blogPosts = [
     readTime: "8 min",
     date: "2026",
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function Blog() {
         <section className="relative min-h-[50vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1534162057773-55bd4a4b5ae1?q=80&w=2670&auto=format&fit=crop"
               alt="MKH Bouw blog"
               fill
               className="object-cover"

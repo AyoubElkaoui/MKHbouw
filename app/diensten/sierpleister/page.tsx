@@ -54,7 +54,7 @@ export default function SierpleisterPage() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1534162057773-55bd4a4b5ae1?q=80&w=2670&auto=format&fit=crop"
               alt="Exclusieve sierpleister wandafwerking"
               fill
               className="object-cover"

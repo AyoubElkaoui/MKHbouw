@@ -51,7 +51,7 @@ export default function SchilderwerkPage() {
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2670&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1679018179962-06922435f6bc?q=80&w=2670&auto=format&fit=crop"
               alt="Professioneel schilderwerk MKH Bouw"
               fill
               className="object-cover"

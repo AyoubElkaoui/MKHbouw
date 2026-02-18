@@ -116,7 +116,7 @@ export default function About() {
               {/* Main large image */}
               <div className="col-span-2 relative h-[320px] rounded-2xl overflow-hidden group">
                 <Image
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2574&auto=format&fit=crop"
+                  src="https://plus.unsplash.com/premium_photo-1678454428455-25e6dd839efb?q=80&w=2670&auto=format&fit=crop"
                   alt="MKH Bouw professioneel bouwwerk"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -134,7 +134,7 @@ export default function About() {
               {/* Two smaller images */}
               <div className="relative h-[200px] rounded-2xl overflow-hidden group">
                 <Image
-                  src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop"
+                  src="https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop"
                   alt="Stucwerk detail"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -143,7 +143,7 @@ export default function About() {
               </div>
               <div className="relative h-[200px] rounded-2xl overflow-hidden group">
                 <Image
-                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2670&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1679018179962-06922435f6bc?q=80&w=2670&auto=format&fit=crop"
                   alt="Schilderwerk detail"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"

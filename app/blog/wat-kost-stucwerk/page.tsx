@@ -31,7 +31,7 @@ export default function WatKostStucwerk() {
         <section className="relative min-h-[50vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=2670&auto=format&fit=crop"
+              src="https://plus.unsplash.com/premium_photo-1661308315740-8fb4a111215a?q=80&w=2670&auto=format&fit=crop"
               alt="Stucwerk kosten en prijzen"
               fill
               className="object-cover"

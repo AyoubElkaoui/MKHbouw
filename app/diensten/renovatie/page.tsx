@@ -64,7 +64,7 @@ export default function RenovatiePage() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2531&auto=format&fit=crop"
+              src="https://plus.unsplash.com/premium_photo-1675601690595-41b44f3cacd7?q=80&w=2670&auto=format&fit=crop"
               alt="Professionele renovatie MKH Bouw"
               fill
               className="object-cover"
@@ -245,7 +245,7 @@ export default function RenovatiePage() {
                   <div className="absolute -inset-4 bg-gradient-to-br from-primary to-accent rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
                   <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2670&auto=format&fit=crop"
+                      src="https://plus.unsplash.com/premium_photo-1675601690595-41b44f3cacd7?q=80&w=2670&auto=format&fit=crop"
                       alt="Professionele renovatie MKH Bouw Amsterdam"
                       width={600}
                       height={500}
