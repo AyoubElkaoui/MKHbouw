@@ -1,42 +1,42 @@
 import type { Metadata } from "next";
-import { CheckCircle, ArrowLeft, Phone, ArrowRight, Wallpaper, Star, Shield, Clock, Users } from "lucide-react";
+import { CheckCircle, ArrowLeft, Phone, ArrowRight, HardHat, Star, Shield, Clock, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Behangen - Vakkundig Behangwerk | MKH Bouw Amsterdam",
-  description: "Professioneel behangen door MKH Bouw Amsterdam. Vliesbehang, glasvezelbehang, structuurbehang en fotobehang. Perfecte naadaansluiting, nette afwerking. Gratis offerte.",
-  keywords: ["behangen Amsterdam", "vliesbehang", "glasvezelbehang", "behanger Amsterdam", "structuurbehang", "fotobehang", "MKH Bouw"],
-  alternates: { canonical: "https://mkhbouw.nl/diensten/behangen" },
+  title: "Totaal Afbouw - Complete Afbouw Woning & Bedrijf | MKH Bouw Amsterdam",
+  description: "Complete totaal afbouw van uw woning of bedrijfspand door MKH Bouw Amsterdam. Van ruwbouw tot sleutelklare oplevering — alle disciplines onder één dak. 15+ jaar ervaring. Gratis offerte.",
+  keywords: ["totaal afbouw", "complete afbouw", "afbouw woning Amsterdam", "aannemer afbouw", "totaaloplossing bouw", "MKH Bouw"],
+  alternates: { canonical: "https://mkhbouw.nl/diensten/totaal-afbouw" },
 };
 
 const steps = [
-  { num: "01", title: "Offerte & advies", desc: "Wij bespreken uw wensen, adviseren het juiste behangtype en maken een offerte met duidelijke prijs per ruimte." },
-  { num: "02", title: "Ondergrond voorbereiden", desc: "De wand wordt grondig gereinigd, old behang verwijderd en indien nodig gegrond voor optimale hechting." },
-  { num: "03", title: "Inmeten & knippen", desc: "Het behang wordt nauwkeurig opgemeten en op maat geknipt, rekening houdend met dessins en patronen." },
-  { num: "04", title: "Plaatsen & afwerken", desc: "Elk baan wordt strak en naadonzichtbaar aangebracht. Rondom kozijnen, stopcontacten en hoeken netjes bijgesneden." },
+  { num: "01", title: "Gratis gesprek & offerte", desc: "Wij komen langs, bespreken uw wensen en maken een gedetailleerde offerte op maat — geheel vrijblijvend." },
+  { num: "02", title: "Planning & voorbereiding", desc: "Samen stellen wij een duidelijke planning op. Welke disciplines, welke volgorde, wanneer start en oplevering." },
+  { num: "03", title: "Vakkundige uitvoering", desc: "Ons team voert alle werkzaamheden zelf uit of coördineert gecertificeerde partners. U heeft één aanspreekpunt." },
+  { num: "04", title: "Oplevering & garantie", desc: "Na oplevering loopt u het pand met ons door. Alles klopt, alles zit goed — wij geven garantie op ons werk." },
 ];
 
 const specializations = [
-  { title: "Vliesbehang", desc: "Het meest populaire behangtype — duurzaam, makkelijk te verwijderen en ideaal voor wanden met kleine oneffenheden. Verkrijgbaar in eindeloos veel dessins." },
-  { title: "Glasvezelbehang", desc: "Uiterst sterk en brandvertragend. Ideaal voor kantoren, hotels, scholen en andere zakelijke ruimten. Overschilderbaar en erg duurzaam." },
-  { title: "Structuurbehang", desc: "Behang met een reliëfstructuur dat extra karakter en diepte aan uw wand geeft. Stucco-, textiel- en linnenstructuren verkrijgbaar." },
-  { title: "Fotobehang op maat", desc: "Een unieke foto of print als muurdecoratie — volledig op maat gedrukt en professioneel aangebracht voor een bijzonder effect." },
-  { title: "Papierbehang & luxebehang", desc: "Klassiek papierbehang of exclusief stofbehang voor een tijdloze en luxueuze uitstraling in woon- of slaapkamers." },
-  { title: "Commercieel behangwerk", desc: "Wij behangen ook hotels, restaurants, kantoren en winkels. Groot of klein, wij werken snel en buiten openingstijden indien gewenst." },
+  { title: "Nieuwbouw afbouw", desc: "Complete afbouw van nieuwbouwwoningen en bedrijfspanden. Van het plaatsen van kozijnen en deuren tot stucwerk, schilderwerk en vloerafwerking." },
+  { title: "Renovatie & verbouw", desc: "Totale verbouw van bestaande panden — inclusief sloopwerk, elektra, loodgieterswerk en alle afwerkingsdisciplines." },
+  { title: "Bedrijfspanden & kantoren", desc: "Kantoor, winkel, horecagelegenheid of zorginstelling — wij bouwen uw professionele werkplek af op maat en binnen budget." },
+  { title: "Particuliere woningen", desc: "Nieuwbouwwoning of verbouwing van een bestaande woning — wij werken met u samen voor het perfecte eindresultaat." },
+  { title: "VvE & appartementencomplexen", desc: "Groot onderhoud of renovatie van meerdere woningen tegelijk. Wij plannen efficiënt zodat bewoners minimale overlast ervaren." },
+  { title: "Spoed & projectbeheer", desc: "Strakke deadlines? Wij kunnen ook in korte tijd grote projecten coördineren en opleveren — met dezelfde kwaliteitsstandaard." },
 ];
 
 const faqs = [
-  { q: "Kan oud behang er gewoon overheen?", a: "In de meeste gevallen raden wij dit af. Oud behang kan loslaten en zorgt voor een ongelijkmatig oppervlak. Wij verwijderen oud behang vakkundig en bereiden de wand goed voor." },
-  { q: "Wat kost behangen per m²?", a: "Dit hangt af van het type behang en de ondergrond. Gemiddeld rekent u €8-€20 per m² voor het aanbrengen, exclusief het behang zelf. Wij maken een offerte op maat." },
-  { q: "Hoe lang duurt het behangen van een kamer?", a: "Een gemiddelde woonkamer duurt 1 tot 2 dagen, afhankelijk van het formaat en het type behang. Kamers met veel obstakels (ramen, deuren, nissen) duren iets langer." },
-  { q: "Leveren jullie ook het behang?", a: "U kunt zelf behang aanschaffen of wij bestellen het voor u. Wij adviseren u over de juiste kwaliteit en hoeveelheid zodat u niet te veel of te weinig bestelt." },
-  { q: "Kan glasvezelbehang ook overschilderd worden?", a: "Ja, glasvezelbehang is speciaal ontworpen om meerdere keren overschilderd te worden. Dit maakt het ideaal voor ruimten die periodiek een verfbeurt nodig hebben." },
+  { q: "Wat kost een totale afbouw?", a: "De kosten hangen af van de omvang van het project, de gebruikte materialen en de disciplines die nodig zijn. Wij maken altijd een gedetailleerde offerte op maat — volledig transparant, zonder verborgen kosten." },
+  { q: "Hoe lang duurt een totaal afbouw project?", a: "Dit varieert sterk. Een kleine verbouwing kan in 1-2 weken, een complete afbouw van een woning duurt gemiddeld 4-10 weken afhankelijk van de omvang en planning." },
+  { q: "Welke disciplines vallen onder totaal afbouw?", a: "Stucwerk, schilderwerk, tegelen, vloerlegging, timmerwerk, elektra, loodgieterswerk, dakwerk en behangen. Wij coördineren alles — u heeft één aanspreekpunt." },
+  { q: "Werken jullie ook buiten Amsterdam?", a: "Ja, MKH Bouw is actief door heel Nederland. Wij nemen projecten aan in Amsterdam en omgeving, maar ook landelijk voor grotere opdrachten." },
+  { q: "Kan ik ook een deel van de afbouw zelf doen?", a: "Absoluut. Wij passen de offerte en planning aan op basis van wat u zelf wilt doen en wat u aan ons uitbesteedt. Flexibiliteit staat bij ons centraal." },
 ];
 
-export default function BehangenPage() {
+export default function TotaalAfbouwPage() {
   return (
     <>
       <Navigation />
@@ -45,7 +45,7 @@ export default function BehangenPage() {
         {/* Hero */}
         <section className="relative min-h-[75vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
-            <Image src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=2670&auto=format&fit=crop" alt="Behangen MKH Bouw Amsterdam" fill className="object-cover opacity-40" priority />
+            <Image src="https://images.unsplash.com/photo-1770838773417-08b18661c62f?q=80&w=2670&auto=format&fit=crop" alt="Totaal afbouw MKH Bouw" fill className="object-cover opacity-40" priority />
             <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/70 to-zinc-950/30" />
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
           </div>
@@ -57,17 +57,17 @@ export default function BehangenPage() {
             </Link>
             <div className="flex items-center gap-4 mb-6">
               <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center border border-primary/30">
-                <Wallpaper size={28} className="text-primary-300" />
+                <HardHat size={28} className="text-primary-300" />
               </div>
               <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold border border-primary/20">
-                <Star size={12} className="fill-primary-400" /> Behangwerk
+                <Star size={12} className="fill-primary-400" /> Complete Afbouw
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight max-w-3xl">
-              Professioneel <span className="text-primary-400">Behangen</span>
+              Totaal <span className="text-primary-400">Afbouw</span> van A tot Z
             </h1>
             <p className="text-xl text-zinc-300 max-w-2xl mb-10 leading-relaxed">
-              Vliesbehang, glasvezelbehang, structuurbehang of fotobehang op maat — strak aangebracht met perfecte naadaansluiting door onze ervaren behangers.
+              Complete afbouw van uw woning of bedrijfspand. Van ruwbouw tot sleutelklare oplevering — alle disciplines, één aanspreekpunt, één prijs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary/25 hover:-translate-y-0.5">
@@ -79,10 +79,16 @@ export default function BehangenPage() {
             </div>
           </div>
 
+          {/* Stats bar */}
           <div className="absolute bottom-0 left-0 right-0 bg-white/[0.03] backdrop-blur-xl border-t border-white/5">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/5">
-                {[{ number: "15+", label: "Jaar ervaring" }, { number: "6", label: "Behangsoorten" }, { number: "100%", label: "Strakke naden" }, { number: "24u", label: "Reactietijd" }].map((s) => (
+                {[
+                  { number: "15+", label: "Jaar ervaring" },
+                  { number: "500+", label: "Projecten afgerond" },
+                  { number: "10+", label: "Disciplines" },
+                  { number: "24u", label: "Reactietijd" },
+                ].map((s) => (
                   <div key={s.label} className="py-5 px-6 text-center">
                     <div className="text-2xl md:text-3xl font-bold text-white">{s.number}</div>
                     <div className="text-sm text-zinc-500 font-medium">{s.label}</div>
@@ -96,30 +102,32 @@ export default function BehangenPage() {
         {/* Intro + Benefits */}
         <section className="py-24 bg-zinc-900 relative overflow-hidden">
           <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+          <div className="absolute right-0 top-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto items-start">
               <div>
-                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-primary/20">Vakkundig behangwerk</span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Strak en naatonzichtbaar</h2>
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-primary/20">Wat is totaal afbouw?</span>
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Eén aannemer voor alles</h2>
                 <p className="text-zinc-400 leading-relaxed mb-5">
-                  MKH Bouw is gespecialiseerd in alle soorten behangwerk voor particulieren en bedrijven. Wij werken nauwkeurig en netjes — van het verwijderen van oud behang tot het strak en naadonzichtbaar aanbrengen van nieuw behang.
+                  Totaal afbouw betekent dat MKH Bouw uw complete bouwproject van begin tot eind verzorgt. Wij coördineren alle vakdisciplines — stucwerk, schilderwerk, tegelen, vloerlegging, elektra, loodgieterswerk en meer. U heeft één aanspreekpunt en één vaste prijs.
                 </p>
                 <p className="text-zinc-500 leading-relaxed mb-5">
-                  Onze behangers hebben jarenlange ervaring met alle soorten behang, van eenvoudig vliesbehang tot moeilijk te verwerken patroonbehang en luxe stofbehang. Ook in kleine, lastige ruimten werken wij precies en opgeruimd.
+                  Veel opdrachtgevers hebben het liever bij één betrouwbare partner dan bij vijf verschillende aannemers. Dat bespaart tijd, stress en vaak ook geld. Wij plannen de disciplines slim op elkaar zodat er geen onnodige wachttijden zijn.
                 </p>
                 <p className="text-zinc-500 leading-relaxed mb-10">
-                  Voor zakelijke opdrachtgevers zoals hotels, kantoren en winkels werken wij ook buiten openingstijden zodat uw bedrijfsvoering ongestoord doorgaat.
+                  Of het nu gaat om een nieuwbouwwoning, een complete verbouwing of de renovatie van een bedrijfspand — wij zorgen voor een strakke, tijdige en hoogwaardige oplevering.
                 </p>
+                <h3 className="text-xl font-bold text-white mb-5">Wat u van ons mag verwachten</h3>
                 <ul className="space-y-3">
                   {[
-                    "Perfecte naadaansluiting bij elk dessin en motief",
-                    "Alle soorten behang: vlies, glasvezel, structuur, stof, foto",
-                    "Oud behang verwijderen inclusief kleeflaag",
-                    "Grondlagen en wandvoorbereiding inbegrepen",
-                    "Nette afwerking rondom kozijnen, stopcontacten en hoeken",
-                    "Stofvrije werkwijze met dagelijkse opruiming",
-                    "Zakelijk behangwerk ook buiten openingstijden",
-                    "Behang advies en berekening van benodigde rollen",
+                    "Één aanspreekpunt voor alle bouwdisciplines",
+                    "Van ruwbouw tot sleutelklare oplevering",
+                    "Transparante offerte — geen verborgen kosten",
+                    "Realistische planning met strakke deadlines",
+                    "Alle materialen en onderaannemers via ons geregeld",
+                    "Garantie op alle uitgevoerde werkzaamheden",
+                    "Schone werkplek, dagelijks opgeruimd",
+                    "Geschikt voor particulieren en zakelijke opdrachtgevers",
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-3">
                       <CheckCircle size={18} className="text-primary-400 flex-shrink-0 mt-0.5" />
@@ -129,11 +137,12 @@ export default function BehangenPage() {
                 </ul>
               </div>
               <div className="space-y-5">
+                <h3 className="text-xl font-bold text-white mb-2">Waarom kiezen voor MKH Bouw?</h3>
                 {[
-                  { icon: Shield, title: "Kwaliteitsgarantie", desc: "Wij staan achter ons behangwerk. Loslaten of ongelijke naden? Wij lossen het op zonder extra kosten." },
-                  { icon: Users, title: "Ervaren behangers", desc: "Onze behangers verwerken dagelijks alle soorten behang — ook moeilijke patronen, nissen en schuine wanden." },
-                  { icon: Clock, title: "Snel en efficiënt", desc: "Wij werken snel zonder in te leveren op kwaliteit. Een kamer is doorgaans binnen 1-2 dagen klaar." },
-                  { icon: Star, title: "Behang advies", desc: "Weet u nog niet welk behang u wilt? Wij adviseren u op basis van uw smaak, ruimte en budget." },
+                  { icon: Shield, title: "Betrouwbaar & transparant", desc: "Vaste prijzen, duidelijke afspraken en eerlijke communicatie. Wat we beloven, leveren we." },
+                  { icon: Users, title: "Ervaren vakteam", desc: "Meer dan 15 jaar ervaring in de bouw. Ons team beheerst alle relevante disciplines en werkt met hoogwaardige materialen." },
+                  { icon: Clock, title: "Binnen planning", desc: "Wij hanteren strakke planningen en houden u wekelijks op de hoogte van de voortgang. Geen onaangename verrassingen." },
+                  { icon: Star, title: "Garantie op ons werk", desc: "Na oplevering loopt u het pand met ons door. Wij staan achter elk onderdeel van onze werkzaamheden." },
                 ].map((item) => (
                   <div key={item.title} className="bg-zinc-950/50 border border-white/5 hover:border-primary/20 rounded-2xl p-5 transition-all group">
                     <div className="flex items-start gap-4">
@@ -155,11 +164,12 @@ export default function BehangenPage() {
         {/* Process */}
         <section className="py-24 bg-zinc-950 relative overflow-hidden">
           <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+          <div className="absolute left-10 top-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 border border-primary/20">Werkwijze</span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-white">Van aanvraag tot perfect resultaat</h2>
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 border border-primary/20">Onze Werkwijze</span>
+                <h2 className="text-3xl lg:text-4xl font-bold text-white">Hoe werkt het?</h2>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {steps.map((step, i) => (
@@ -183,8 +193,8 @@ export default function BehangenPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 border border-primary/20">Specialisaties</span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-white">Alle soorten behang</h2>
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 border border-primary/20">Wat wij doen</span>
+                <h2 className="text-3xl lg:text-4xl font-bold text-white">Onze afbouwspecialisaties</h2>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {specializations.map((s, i) => (
@@ -206,7 +216,7 @@ export default function BehangenPage() {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-14">
                 <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 border border-primary/20">FAQ</span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-white">Veelgestelde vragen over behangen</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold text-white">Veelgestelde vragen</h2>
               </div>
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
@@ -222,7 +232,7 @@ export default function BehangenPage() {
           </div>
         </section>
 
-        {/* Related */}
+        {/* Related Services */}
         <section className="py-16 bg-zinc-900 relative overflow-hidden">
           <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -232,8 +242,12 @@ export default function BehangenPage() {
                 {[
                   { href: "/diensten/stucwerk", label: "Stucwerk & Gevelwerk" },
                   { href: "/diensten/schilderwerk", label: "Schilderwerk" },
-                  { href: "/diensten/totaal-afbouw", label: "Totaal Afbouw" },
                   { href: "/diensten/tegelen", label: "Tegelen" },
+                  { href: "/diensten/electra", label: "Electra" },
+                  { href: "/diensten/loodgieterswerk", label: "Loodgieterswerk" },
+                  { href: "/diensten/timmerwerk", label: "Timmerwerk" },
+                  { href: "/diensten/laminaat", label: "Laminaat & PVC" },
+                  { href: "/diensten/dakleggen", label: "Dakleggen" },
                 ].map((link) => (
                   <Link key={link.href} href={link.href} className="group bg-zinc-950/50 border border-white/5 hover:border-primary/30 rounded-xl p-4 text-sm text-zinc-400 hover:text-white transition-all flex items-center justify-between">
                     {link.label} <ArrowRight size={14} className="text-primary-400 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -248,8 +262,8 @@ export default function BehangenPage() {
         <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-zinc-900 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">Behangen laten uitvoeren?</h2>
-            <p className="text-zinc-300 max-w-xl mx-auto mb-8 leading-relaxed">Vraag vandaag nog een gratis en vrijblijvende offerte aan. Wij reageren binnen 24 uur.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">Klaar voor uw afbouwproject?</h2>
+            <p className="text-zinc-300 max-w-xl mx-auto mb-8 leading-relaxed">Vraag vandaag nog een gratis en vrijblijvende offerte aan. Wij reageren binnen 24 uur met een persoonlijk voorstel.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-white text-primary-800 px-8 py-4 rounded-xl font-bold hover:bg-primary-50 transition-all shadow-xl shadow-black/20 hover:-translate-y-0.5">
                 Offerte Aanvragen <ArrowRight size={18} />

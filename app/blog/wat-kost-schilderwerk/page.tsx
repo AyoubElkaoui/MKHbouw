@@ -1,454 +1,167 @@
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import {
-  Paintbrush,
-  CheckCircle,
-  Calculator,
-  AlertCircle,
-  Phone,
-  ArrowRight,
-  Home,
-  TrendingUp,
-} from "lucide-react";
+import { CheckCircle, Calculator, AlertCircle, Phone, ArrowRight, Home, TrendingUp, ArrowLeft, Star } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "wat kost schilderwerk in 2026? offerte aanvragen | mkhbouw",
-  description:
-    "benieuwd naar de kosten van schilderwerk in 2026? ontdek welke factoren de prijs bepalen en vraag een vrijblijvende offerte aan bij mkhbouw.",
-  keywords: [
-    "wat kost schilderwerk",
-    "schilderwerk prijs",
-    "schilder kosten",
-    "schilderen prijzen 2026",
-    "hoeveel kost schilderen",
-    "offerte schilderwerk",
-    "schilder tarief",
-  ],
-  openGraph: {
-    title: "wat kost schilderwerk in 2026? offerte aanvragen",
-    description:
-      "ontdek welke factoren de prijs van schilderwerk bepalen en vraag een vrijblijvende offerte aan.",
-    url: "https://mkhbouw.nl/blog/wat-kost-schilderwerk",
-  },
+  title: "Wat Kost Schilderwerk in 2026? | MKH Bouw Amsterdam",
+  description: "Benieuwd naar de kosten van schilderwerk in 2026? Ontdek welke factoren de prijs bepalen en vraag een vrijblijvende offerte aan bij MKH Bouw.",
+  keywords: ["wat kost schilderwerk", "schilderwerk prijs", "schilder kosten 2026", "offerte schilderwerk", "schilder tarief"],
+  alternates: { canonical: "https://mkhbouw.nl/blog/wat-kost-schilderwerk" },
 };
 
 export default function WatKostSchilderwerk() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="bg-zinc-950">
+
         {/* Hero */}
-        <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-white">
+        <section className="relative min-h-[55vh] flex items-center overflow-hidden">
+          <div className="absolute inset-0">
+            <Image src="https://images.unsplash.com/photo-1742900280861-32bed068938b?q=80&w=2670&auto=format&fit=crop" alt="Schilderwerk kosten 2026" fill className="object-cover opacity-35" priority />
+            <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/75 to-zinc-950/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
+          </div>
+          <div className="absolute top-20 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-32">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-zinc-400 hover:text-white mb-8 transition-colors text-sm">
+              <ArrowLeft size={16} /> Terug naar blog
+            </Link>
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-300 px-5 py-2.5 rounded-full text-sm font-medium border border-primary/20 mb-6">
+                <Star size={14} className="fill-primary-400 text-primary-400" /> Prijsgids 2026
+              </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Wat kost schilderwerk <span className="text-primary-400">in 2026?</span>
+              </h1>
+              <p className="text-lg text-zinc-300 mb-8 leading-relaxed max-w-2xl">
+                De prijs van schilderwerk hangt af van vele factoren: oppervlakte, type verf, voorbereiding en de staat van het houtwerk. In deze gids leggen we alles uit.
+              </p>
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-700 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-primary/25 hover:-translate-y-0.5">
+                <Phone size={18} /> Vraag vrijblijvende offerte aan
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Info banner */}
+        <section className="py-12 bg-zinc-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <div className="inline-block bg-primary/10 text-primary px-6 py-2 rounded-full font-semibold text-sm mb-6">
-                <Paintbrush className="inline-block w-4 h-4 mr-2" />
-                prijsgids 2026
-              </div>
-
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                wat kost schilderwerk in 2026?
-              </h1>
-
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                ben je van plan om schilderwerk te laten doen en wil je weten
-                wat de kosten zijn? de prijs van schilderwerk hangt af van
-                verschillende factoren zoals oppervlakte, type verf, voorbereiding
-                en de staat van het houtwerk.
-              </p>
-
-              <div className="bg-blue-100 border-l-4 border-primary p-6 rounded-r-lg">
-                <p className="text-gray-800 font-semibold mb-2">
-                  💡 belangrijk om te weten
-                </p>
-                <p className="text-gray-700 mb-4">
-                  elke schilderklus is uniek. de prijs hangt af van het type
-                  werk (binnen/buiten), het aantal verflagen, de staat van het
-                  houtwerk, hoogte en bereikbaarheid. daarom werken wij alleen
-                  met projectgebonden offertes op maat.
-                </p>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-                >
-                  <Phone size={18} />
-                  vraag vrijblijvende offerte aan
+              <div className="bg-primary/10 border border-primary/20 p-8 rounded-2xl">
+                <p className="text-white font-semibold mb-2 text-lg">Belangrijk om te weten</p>
+                <p className="text-zinc-400 mb-5 leading-relaxed">Elke schilderklus is uniek. De prijs hangt af van het type werk (binnen/buiten), het aantal verflagen, de staat van het houtwerk, hoogte en bereikbaarheid. Wij werken altijd met projectgebonden offertes op maat.</p>
+                <Link href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-700 transition-all shadow-lg shadow-primary/25 text-sm">
+                  <Phone size={16} /> Vraag vrijblijvende offerte aan
                 </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Types schilderwerk */}
-        <section className="py-16 bg-white">
+        {/* Types */}
+        <section className="py-20 bg-zinc-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                welke soorten schilderwerk zijn er?
-              </h2>
-
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
-                {/* Binnenschilderwerk */}
-                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border-2 border-blue-100">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    binnenschilderwerk
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    muren, plafonds, deuren en kozijnen in huis schilderen.
-                    meestal minder complex dan buitenwerk.
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">wanden en plafonds</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">deuren en kozijnen</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">plinten en lijstwerk</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">radiatoren</span>
-                    </li>
-                  </ul>
-                  <p className="text-sm text-gray-600 mb-4">
-                    ideaal voor: renovatie, opfrissen, nieuwe uitstraling
-                  </p>
-                  <Link
-                    href="/diensten/schilderwerk"
-                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-                  >
-                    meer over binnenschilderen <ArrowRight size={18} />
-                  </Link>
-                </div>
-
-                {/* Buitenschilderwerk */}
-                <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-gray-200">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    buitenschilderwerk
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    bescherming en onderhoud van buitenkozijnen, deuren, gevels
-                    en houtwerk tegen weersinvloeden.
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">kozijnen en ramen</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">deuren en dorpels</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">gevels en dakgoten</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">schuttingen en tuinhuizen</span>
-                    </li>
-                  </ul>
-                  <p className="text-sm text-gray-600 mb-4">
-                    ideaal voor: onderhoud, bescherming, waardebehoud
-                  </p>
-                  <Link
-                    href="/diensten/schilderwerk"
-                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-                  >
-                    meer over buitenschilderen <ArrowRight size={18} />
-                  </Link>
-                </div>
-
-                {/* Specialistisch werk */}
-                <div className="bg-gradient-to-br from-amber-50 to-white p-8 rounded-2xl border-2 border-amber-200">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    specialistisch werk
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    verfijnd schilderwerk zoals spuitwerk, lakwerk en decoratieve
-                    technieken voor een premium resultaat.
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">spuitwerk voor deuren</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">lakwerk hoogglans</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">decoratieve technieken</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle
-                        className="text-green-500 flex-shrink-0 mt-1"
-                        size={20}
-                      />
-                      <span className="text-gray-700">restauratie oud houtwerk</span>
-                    </li>
-                  </ul>
-                  <p className="text-sm text-gray-600 mb-4">
-                    ideaal voor: luxe afwerking, monumenten, high-end projecten
-                  </p>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-                  >
-                    vraag advies aan <ArrowRight size={18} />
-                  </Link>
-                </div>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">Soorten schilderwerk</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Welke soorten schilderwerk zijn er?</h2>
+              </div>
+              <div className="grid md:grid-cols-3 gap-7">
+                {[
+                  { title: "Binnenschilderwerk", desc: "Muren, plafonds, deuren en kozijnen in huis schilderen. Meestal minder complex dan buitenwerk.", items: ["Wanden en plafonds", "Deuren en kozijnen", "Plinten en lijstwerk", "Radiatoren"], note: "Ideaal voor: renovatie, opfrissen, nieuwe uitstraling", href: "/diensten/schilderwerk" },
+                  { title: "Buitenschilderwerk", desc: "Bescherming en onderhoud van buitenkozijnen, deuren, gevels en houtwerk.", items: ["Kozijnen en ramen", "Deuren en dorpels", "Gevels en dakgoten", "Schuttingen en tuinhuizen"], note: "Ideaal voor: onderhoud, bescherming, waardebehoud", href: "/diensten/schilderwerk" },
+                  { title: "Specialistisch werk", desc: "Verfijnd schilderwerk zoals spuitwerk, lakwerk en decoratieve technieken.", items: ["Spuitwerk voor deuren", "Lakwerk hoogglans", "Decoratieve technieken", "Restauratie oud houtwerk"], note: "Ideaal voor: luxe afwerking, monumenten, high-end projecten", href: "/contact" },
+                ].map((card, i) => (
+                  <div key={card.title} className="bg-zinc-900 p-7 rounded-2xl border border-white/5 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10 transition-all hover:-translate-y-1 group">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary-300 transition-colors">{card.title}</h3>
+                    <p className="text-zinc-400 mb-5 text-sm leading-relaxed">{card.desc}</p>
+                    <ul className="space-y-2 mb-5">
+                      {card.items.map(item => (
+                        <li key={item} className="flex items-start gap-2">
+                          <CheckCircle className="text-primary-400 flex-shrink-0 mt-0.5" size={16} />
+                          <span className="text-zinc-400 text-sm">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-xs text-zinc-600 mb-4">{card.note}</p>
+                    <Link href={card.href} className="inline-flex items-center gap-2 text-primary-400 font-semibold hover:gap-3 transition-all text-sm">
+                      Meer informatie <ArrowRight size={16} />
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Factoren die prijs beïnvloeden */}
-        <section className="py-16 bg-gray-50">
+        {/* Factoren */}
+        <section className="py-20 bg-zinc-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                welke factoren bepalen de prijs?
-              </h2>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Oppervlakte */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <Home className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        oppervlakte en aantal ruimtes
-                      </h3>
-                      <p className="text-gray-700 mb-2">
-                        hoe meer m² we kunnen schilderen, hoe efficiënter we
-                        kunnen werken. bij grotere projecten kunnen we vaak
-                        schaalvoordelen doorberekenen.
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        tip: laat meerdere kamers in één keer doen voor het beste
-                        tarief
-                      </p>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">Prijsfactoren</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Welke factoren bepalen de prijs?</h2>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  { icon: Home, title: "Oppervlakte en aantal ruimtes", body: "Hoe meer m² we kunnen schilderen, hoe efficiënter we werken. Bij grotere projecten kunnen we schaalvoordelen doorberekenen.", tip: "Tip: laat meerdere kamers in één keer doen voor het beste tarief" },
+                  { icon: AlertCircle, title: "Staat van het houtwerk", body: "Rot hout, loszittende verf en scheuren moeten eerst gerepareerd worden. Hoe slechter de staat, hoe meer voorbereidend werk nodig is.", tip: "Goed onderhouden houtwerk bespaart uiteindelijk geld" },
+                  { icon: TrendingUp, title: "Type verf en aantal lagen", body: "Kwaliteitsverf kost meer maar dekt beter en gaat langer mee. Het aantal lagen hangt af van het kleurverschil en de ondergrond.", tip: "Wij adviseren altijd de beste verf voor uw situatie" },
+                  { icon: Calculator, title: "Hoogte en bereikbaarheid", body: "Hoge plafonds, trappenhuizen en buitenwerk op hoogte vragen extra materieel zoals steigers of hoogwerkers.", tip: "Moeilijk bereikbaar werk kost meer tijd en materieel" },
+                ].map((item) => (
+                  <div key={item.title} className="bg-zinc-950/50 p-7 rounded-2xl border border-white/5 hover:border-primary/20 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4">
+                      <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 border border-primary/20 group-hover:bg-primary group-hover:border-primary transition-all">
+                        <item.icon className="text-primary-400 group-hover:text-white transition-colors" size={20} />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                        <p className="text-zinc-400 mb-3 text-sm leading-relaxed">{item.body}</p>
+                        <p className="text-xs text-zinc-600 italic">{item.tip}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                {/* Voorbereiding */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <AlertCircle className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        staat van het houtwerk
-                      </h3>
-                      <p className="text-gray-700 mb-2">
-                        rot hout, loszittende verf en scheuren moeten eerst
-                        gerepareerd worden. hoe slechter de staat, hoe meer
-                        voorbereidend werk nodig is.
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        goed onderhouden houtwerk bespaart uiteindelijk geld
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Type verf */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <Paintbrush className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        type verf en aantal lagen
-                      </h3>
-                      <p className="text-gray-700 mb-4">
-                        kwaliteitsverf kost meer maar dekt beter en gaat langer
-                        mee. het aantal lagen dat nodig is hangt af van het
-                        kleurverschil en de ondergrond.
-                      </p>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• standaard latex: goede prijs-kwaliteit</li>
-                        <li>• premium verf: betere dekking en duurzaamheid</li>
-                        <li>• buitenverf: speciale bescherming</li>
-                        <li>• lakverf: voor hoogglans resultaat</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Hoogte en bereikbaarheid */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <TrendingUp className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        hoogte en bereikbaarheid
-                      </h3>
-                      <p className="text-gray-700 mb-4">
-                        hoge plafonds, trappenhuizen en buitenwerk op hoogte
-                        vragen extra materieel zoals steigers of hoogwerkers.
-                      </p>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• standaard hoogte: geen extra kosten</li>
-                        <li>• hoge ruimtes: steiger nodig</li>
-                        <li>• buitenwerk 2e verdieping: steigers of lift</li>
-                        <li>• moeilijk bereikbare plekken: meer tijd</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
         {/* Extra werkzaamheden */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-zinc-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                wat zit er nog meer bij?
-              </h2>
-
-              <div className="bg-blue-50 p-8 rounded-2xl">
-                <p className="text-gray-700 mb-6">
-                  naast het schilderen zelf zijn er vaak extra werkzaamheden
-                  nodig. deze nemen we mee in de offerte:
-                </p>
-
-                <div className="grid md:grid-cols-2 gap-6">
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">Extra services</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Wat zit er nog meer bij?</h2>
+              </div>
+              <div className="bg-zinc-900 border border-white/5 p-8 rounded-2xl">
+                <p className="text-zinc-400 mb-6 leading-relaxed">Naast het schilderen zelf zijn er vaak extra werkzaamheden nodig. Deze nemen we mee in de offerte:</p>
+                <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-3">
-                      voorbereidend werk
-                    </h3>
-                    <ul className="space-y-2 text-gray-700">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>oude verf afkrabben</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>schuren van houtwerk</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>gaten en scheuren repareren</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>afdekken en afplakken</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>grondverf aanbrengen</span>
-                      </li>
+                    <h3 className="font-bold text-white mb-4">Voorbereidend werk</h3>
+                    <ul className="space-y-3">
+                      {["Oude verf afkrabben", "Schuren van houtwerk", "Gaten en scheuren repareren", "Afdekken en afplakken", "Grondverf aanbrengen"].map(item => (
+                        <li key={item} className="flex items-start gap-3">
+                          <CheckCircle className="text-primary-400 flex-shrink-0 mt-0.5" size={16} />
+                          <span className="text-zinc-400 text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
-
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-3">
-                      extra services
-                    </h3>
-                    <ul className="space-y-2 text-gray-700">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>verwijderen behang</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>reparatie rot hout</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>kitwerk en afwerking</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>opruimen en afvoer</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle
-                          className="text-primary flex-shrink-0 mt-1"
-                          size={18}
-                        />
-                        <span>kleuradvies</span>
-                      </li>
+                    <h3 className="font-bold text-white mb-4">Extra services</h3>
+                    <ul className="space-y-3">
+                      {["Verwijderen behang", "Reparatie rot hout", "Kitwerk en afwerking", "Opruimen en afvoer", "Kleuradvies"].map(item => (
+                        <li key={item} className="flex items-start gap-3">
+                          <CheckCircle className="text-primary-400 flex-shrink-0 mt-0.5" size={16} />
+                          <span className="text-zinc-400 text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -457,287 +170,109 @@ export default function WatKostSchilderwerk() {
           </div>
         </section>
 
-        {/* Hoe bespaar je */}
-        <section className="py-16 bg-gray-50">
+        {/* Bespaartips */}
+        <section className="py-20 bg-zinc-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                slimme tips om kosten te besparen
-              </h2>
-
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    1. regelmatig onderhoud voorkomt groot onderhoud
-                  </h3>
-                  <p className="text-gray-700">
-                    buitenwerk elke 5-7 jaar overschilderen bespaart veel geld.
-                    wacht niet tot het hout rot is, dan wordt het echt duur.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    2. voorbereiding zelf doen
-                  </h3>
-                  <p className="text-gray-700">
-                    meubels verhuizen, oude spijkers verwijderen en afplakken
-                    kun je zelf doen. dit scheelt arbeidsuren.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    3. meerdere werkzaamheden combineren
-                  </h3>
-                  <p className="text-gray-700">
-                    laat schilderwerk combineren met stucwerk of andere
-                    werkzaamheden. we zijn dan toch al bezig en dat scheelt in
-                    de totaalprijs.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    4. kies het juiste seizoen
-                  </h3>
-                  <p className="text-gray-700">
-                    buiten het hoogseizoen (voorjaar/zomer) hebben we soms meer
-                    flexibiliteit in planning en kunnen we scherpere tarieven
-                    aanbieden.
-                  </p>
-                </div>
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">Bespaartips</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Slimme tips om kosten te besparen</h2>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { num: "1", title: "Regelmatig onderhoud voorkomt groot onderhoud", desc: "Buitenwerk elke 5-7 jaar overschilderen bespaart veel geld. Wacht niet tot het hout rot is." },
+                  { num: "2", title: "Voorbereiding zelf doen", desc: "Meubels verhuizen, oude spijkers verwijderen en afplakken kun je zelf doen. Dit scheelt arbeidsuren." },
+                  { num: "3", title: "Meerdere werkzaamheden combineren", desc: "Laat schilderwerk combineren met stucwerk of andere werkzaamheden voor een beter totaaltarief." },
+                  { num: "4", title: "Kies het juiste seizoen", desc: "Buiten het hoogseizoen (voorjaar/zomer) hebben we soms meer flexibiliteit in planning en tarieven." },
+                ].map((tip) => (
+                  <div key={tip.num} className="bg-zinc-950/50 border border-white/5 hover:border-primary/20 p-6 rounded-2xl transition-all group">
+                    <div className="flex items-start gap-4">
+                      <span className="text-3xl font-black text-primary/20 leading-none flex-shrink-0">{tip.num}</span>
+                      <div>
+                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">{tip.title}</h3>
+                        <p className="text-zinc-500 text-sm leading-relaxed">{tip.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Waarom mkhbouw */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                waarom kiezen voor mkhbouw?
-              </h2>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-12">
-                <div className="flex items-start gap-4">
-                  <CheckCircle
-                    className="text-green-500 flex-shrink-0 mt-1"
-                    size={24}
-                  />
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-2">
-                      vakmanschap en ervaring
-                    </h3>
-                    <p className="text-gray-600">
-                      jarenlange ervaring in binnen- en buitenschilderwerk. van
-                      nieuwbouw tot monumentaal vastgoed.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <CheckCircle
-                    className="text-green-500 flex-shrink-0 mt-1"
-                    size={24}
-                  />
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-2">
-                      kwaliteitsverf en materialen
-                    </h3>
-                    <p className="text-gray-600">
-                      we werken alleen met hoogwaardige verven die lang mooi
-                      blijven en goed beschermen.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <CheckCircle
-                    className="text-green-500 flex-shrink-0 mt-1"
-                    size={24}
-                  />
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-2">
-                      netjes en betrouwbaar
-                    </h3>
-                    <p className="text-gray-600">
-                      we werken netjes, komen afspraken na en laten de boel
-                      schoon achter. overlast houden we tot een minimum.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <CheckCircle
-                    className="text-green-500 flex-shrink-0 mt-1"
-                    size={24}
-                  />
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-2">
-                      scherpe prijzen
-                    </h3>
-                    <p className="text-gray-600">
-                      eerlijke prijzen zonder verborgen kosten. wat we
-                      afspreken, dat voeren we uit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-primary to-primary/90 text-white p-8 rounded-2xl text-center">
-                <h3 className="text-2xl font-bold mb-4">
-                  klaar voor een offerte op maat?
-                </h3>
-                <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-                  vertel ons over je schilderproject en ontvang binnen 24 uur
-                  een vrijblijvende offerte. of bel ons direct voor advies.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-                  >
-                    <Calculator size={20} />
-                    offerte aanvragen
-                  </Link>
-                  <a
-                    href="tel:0612345678"
-                    className="inline-flex items-center justify-center gap-2 bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark/90 transition-colors border-2 border-white/20"
-                  >
-                    <Phone size={20} />
-                    direct bellen
-                  </a>
-                </div>
-              </div>
+        {/* CTA */}
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-zinc-900" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">Klaar voor een offerte op maat?</h2>
+            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">Vertel ons over je schilderproject en ontvang binnen 24 uur een vrijblijvende offerte.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-white text-primary-800 px-8 py-4 rounded-xl font-bold hover:bg-primary-50 transition-all shadow-xl shadow-black/20 hover:-translate-y-0.5">
+                <Calculator size={18} /> Offerte aanvragen
+              </Link>
+              <a href="tel:+31684794108" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all">
+                <Phone size={18} /> Direct bellen
+              </a>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 text-white/60 text-sm">
+              {["Vrijblijvend", "Binnen 24 uur reactie", "Gratis advies"].map(t => (
+                <span key={t} className="flex items-center gap-2"><CheckCircle size={14} className="text-primary-300" /> {t}</span>
+              ))}
             </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-20 bg-zinc-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                veelgestelde vragen over schilderwerk prijzen
-              </h2>
-
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    waarom kan ik geen vaste prijs per m² krijgen?
-                  </h3>
-                  <p className="text-gray-700">
-                    schilderwerk is maatwerk. de staat van het houtwerk, het type
-                    verf, het aantal lagen en de bereikbaarheid maken allemaal
-                    verschil. daarom kijken we eerst naar jouw specifieke
-                    situatie voor een eerlijke prijs.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    hoe lang duurt gemiddeld een schilderklus?
-                  </h3>
-                  <p className="text-gray-700">
-                    een gemiddelde woonkamer is in 1-2 dagen klaar. een heel huis
-                    binnen schilderen duurt meestal 3-7 dagen, afhankelijk van de
-                    grootte en het voorbereidend werk.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    leveren jullie de verf of moet ik dat zelf doen?
-                  </h3>
-                  <p className="text-gray-700">
-                    wij verzorgen alle materialen inclusief verf. we werken met
-                    kwaliteitsmerken die we kennen en vertrouwen. natuurlijk
-                    kunnen we ook met door jou geleverde verf werken.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    kan ik tijdens het schilderen in huis blijven?
-                  </h3>
-                  <p className="text-gray-700">
-                    ja, dat kan meestal wel. we werken per ruimte en zorgen dat
-                    de overlast beperkt blijft. bij buitenwerk kun je gewoon
-                    thuis blijven.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    krijg ik garantie op het schilderwerk?
-                  </h3>
-                  <p className="text-gray-700">
-                    ja, we geven garantie op ons werk. de duur hangt af van het
-                    type werk en de omstandigheden. dit staat altijd duidelijk in
-                    de offerte vermeld.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    wanneer is het beste seizoen voor buitenschilderwerk?
-                  </h3>
-                  <p className="text-gray-700">
-                    het liefst in droge periodes tussen maart en oktober. maar
-                    met moderne verven kunnen we ook buiten het seizoen werken,
-                    als het maar droog en niet te koud is.
-                  </p>
-                </div>
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">FAQ</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Veelgestelde vragen over schilderwerk</h2>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { q: "Waarom kan ik geen vaste prijs per m² krijgen?", a: "Schilderwerk is maatwerk. De staat van het houtwerk, het type verf, het aantal lagen en de bereikbaarheid maken allemaal verschil. Daarom kijken we eerst naar jouw specifieke situatie." },
+                  { q: "Hoe lang duurt gemiddeld een schilderklus?", a: "Een gemiddelde woonkamer is in 1-2 dagen klaar. Een heel huis binnen schilderen duurt meestal 3-7 dagen, afhankelijk van de grootte en het voorbereidend werk." },
+                  { q: "Leveren jullie de verf of moet ik dat zelf doen?", a: "Wij verzorgen alle materialen inclusief verf. We werken met kwaliteitsmerken als Sikkens en Dulux. Natuurlijk kunnen we ook met door jou geleverde verf werken." },
+                  { q: "Kan ik tijdens het schilderen in huis blijven?", a: "Ja, dat kan. We werken per ruimte en zorgen dat de overlast beperkt blijft. Bij buitenwerk kun je gewoon thuis blijven." },
+                  { q: "Krijg ik garantie op het schilderwerk?", a: "Ja, we geven garantie op ons werk. De duur hangt af van het type werk en de omstandigheden. Dit staat altijd duidelijk in de offerte vermeld." },
+                  { q: "Wanneer is het beste seizoen voor buitenschilderwerk?", a: "Het liefst in droge periodes tussen maart en oktober. Met moderne verven kunnen we ook buiten het seizoen werken, als het maar droog en niet te koud is." },
+                ].map((faq, i) => (
+                  <div key={i} className="bg-zinc-950/50 border border-white/5 hover:border-primary/20 p-6 rounded-2xl transition-all group">
+                    <h3 className="text-base font-bold text-white mb-2 group-hover:text-primary-300 transition-colors flex items-start gap-3">
+                      <span className="text-primary-400 font-black flex-shrink-0">Q.</span>{faq.q}
+                    </h3>
+                    <p className="text-zinc-500 text-sm leading-relaxed pl-6">{faq.a}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Related articles */}
-        <section className="py-16 bg-white">
+        {/* Related */}
+        <section className="py-16 bg-zinc-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                lees ook
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <Link
-                  href="/blog/wat-kost-stucwerk"
-                  className="group bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all"
-                >
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                    wat kost stucwerk in 2026?
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    benieuwd naar de kosten van stucwerk? ontdek welke factoren
-                    de prijs bepalen.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
-                    lees meer <ArrowRight size={18} />
-                  </span>
-                </Link>
-
-                <Link
-                  href="/diensten/schilderwerk"
-                  className="group bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all"
-                >
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                    onze schilderwerk diensten
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    ontdek alle mogelijkheden voor binnen- en buitenschilderwerk
-                    bij mkhbouw.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
-                    lees meer <ArrowRight size={18} />
-                  </span>
-                </Link>
+              <h2 className="text-2xl font-bold text-white mb-8">Lees ook</h2>
+              <div className="grid md:grid-cols-2 gap-5">
+                {[
+                  { href: "/blog/wat-kost-stucwerk", title: "Wat kost stucwerk in 2026?", desc: "Benieuwd naar de kosten van stucwerk? Ontdek welke factoren de prijs bepalen." },
+                  { href: "/diensten/schilderwerk", title: "Onze schilderwerk diensten", desc: "Ontdek alle mogelijkheden voor binnen- en buitenschilderwerk bij MKH Bouw." },
+                ].map((a) => (
+                  <Link key={a.href} href={a.href} className="group bg-zinc-900 border border-white/5 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 p-6 rounded-2xl transition-all block hover:-translate-y-0.5">
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">{a.title}</h3>
+                    <p className="text-zinc-500 mb-4 text-sm leading-relaxed">{a.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-primary-400 font-semibold text-sm group-hover:gap-3 transition-all">Lees meer <ArrowRight size={16} /></span>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
         </section>
+
       </main>
       <Footer />
     </>

@@ -1,597 +1,212 @@
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import {
-  Clock,
-  CheckCircle,
-  Calendar,
-  AlertCircle,
-  Home,
-  Phone,
-  ArrowRight,
-} from "lucide-react";
+import { Clock, CheckCircle, Calendar, AlertCircle, Home, Phone, ArrowRight, Star, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "hoe lang duurt stucwerk in 2026? planning en tijdsduur | mkhbouw",
-  description:
-    "benieuwd hoe lang stucwerk duurt? ontdek wat de doorlooptijd bepaalt en plan je verbouwing slim. expert advies van mkhbouw.",
-  keywords: [
-    "hoe lang duurt stucwerk",
-    "stucwerk tijdsduur",
-    "stucwerk planning",
-    "doorlooptijd stucwerk",
-    "stucwerk duur",
-    "hoeveel dagen stucwerk",
-    "stucadoor planning",
-  ],
-  openGraph: {
-    title: "hoe lang duurt stucwerk in 2026? planning en tijdsduur",
-    description:
-      "ontdek wat de doorlooptijd van stucwerk bepaalt en hoe je je verbouwing het beste kunt plannen.",
-    url: "https://mkhbouw.nl/blog/hoe-lang-duurt-stucwerk",
-  },
+  title: "Hoe Lang Duurt Stucwerk? Planning & Tijdsduur | MKH Bouw",
+  description: "Benieuwd hoe lang stucwerk duurt? Ontdek wat de doorlooptijd bepaalt en plan je verbouwing slim. Expert advies van MKH Bouw Amsterdam.",
+  keywords: ["hoe lang duurt stucwerk", "stucwerk tijdsduur", "stucwerk planning", "doorlooptijd stucwerk", "hoeveel dagen stucwerk"],
+  alternates: { canonical: "https://mkhbouw.nl/blog/hoe-lang-duurt-stucwerk" },
 };
 
 export default function HoeLangDuurtStucwerk() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="bg-zinc-950">
+
         {/* Hero */}
-        <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <div className="inline-block bg-primary/10 text-primary px-6 py-2 rounded-full font-semibold text-sm mb-6">
-                <Clock className="inline-block w-4 h-4 mr-2" />
-                planning & tijdsduur
-              </div>
-
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                hoe lang duurt stucwerk?
+        <section className="relative min-h-[55vh] flex items-center overflow-hidden">
+          <div className="absolute inset-0">
+            <Image src="https://images.unsplash.com/photo-1770838773417-08b18661c62f?q=80&w=2670&auto=format&fit=crop" alt="Stucwerk planning tijdsduur" fill className="object-cover opacity-35" priority />
+            <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/75 to-zinc-950/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
+          </div>
+          <div className="absolute top-20 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-32">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-zinc-400 hover:text-white mb-8 transition-colors text-sm">
+              <ArrowLeft size={16} /> Terug naar blog
+            </Link>
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-300 px-5 py-2.5 rounded-full text-sm font-medium border border-primary/20 mb-6">
+                <Star size={14} className="fill-primary-400 text-primary-400" /> Planning & Tijdsduur
+              </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Hoe lang duurt <span className="text-primary-400">stucwerk?</span>
               </h1>
-
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                ben je van plan om stucwerk te laten doen en wil je weten hoe
-                lang dit duurt? de doorlooptijd hangt af van verschillende
-                factoren. in deze gids leggen we uit wat je kunt verwachten en
-                hoe je je verbouwing slim plant.
+              <p className="text-lg text-zinc-300 mb-8 leading-relaxed max-w-2xl">
+                Goed plannen is het halve werk. In deze gids vertellen wij je precies wat de doorlooptijd van stucwerk bepaalt, zodat jij je verbouwing slim kunt plannen.
               </p>
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-700 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-primary/25 hover:-translate-y-0.5">
+                <Phone size={18} /> Vraag vrijblijvende offerte aan
+              </Link>
+            </div>
+          </div>
+        </section>
 
-              <div className="bg-blue-100 border-l-4 border-primary p-6 rounded-r-lg">
-                <p className="text-gray-800 font-semibold mb-2">
-                  ⏱️ snel overzicht
+        {/* Snel antwoord */}
+        <section className="py-12 bg-zinc-900">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-primary/10 border border-primary/20 p-8 rounded-2xl">
+                <p className="text-white font-semibold mb-4 text-lg flex items-center gap-2">
+                  <Clock size={20} className="text-primary-400" /> Snel antwoord
                 </p>
-                <p className="text-gray-700 mb-4">
-                  de duur van stucwerk varieert van enkele dagen tot een week of
-                  langer, afhankelijk van de oppervlakte, het type stucwerk, de
-                  staat van de ondergrond en droogtijden.
-                </p>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-                >
-                  <Phone size={18} />
-                  vraag planning aan
-                </Link>
+                <div className="grid md:grid-cols-3 gap-6">
+                  {[
+                    { ruimte: "1 kamer (25-35 m²)", tijd: "1 dag" },
+                    { ruimte: "Woning (5-8 kamers)", tijd: "3-5 dagen" },
+                    { ruimte: "Droogtijd stuc", tijd: "24-48 uur" },
+                  ].map((item) => (
+                    <div key={item.ruimte} className="text-center">
+                      <div className="text-3xl font-black text-primary-400 mb-1">{item.tijd}</div>
+                      <div className="text-zinc-400 text-sm">{item.ruimte}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Gemiddelde tijdsduur per type */}
-        <section className="py-16 bg-white">
+        {/* Tijdsduur per ruimte */}
+        <section className="py-20 bg-zinc-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                gemiddelde doorlooptijd per type stucwerk
-              </h2>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                {/* Spackspuiten */}
-                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border-2 border-blue-100">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Clock className="text-primary" size={32} />
-                    <h3 className="text-2xl font-bold text-gray-900">
-                      spackspuiten
-                    </h3>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">Tijdsduur per ruimte</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Hoe lang duurt het per ruimte?</h2>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { icon: Home, ruimte: "Slaapkamer", oppervlak: "20-30 m²", tijd: "0,5 - 1 dag", extra: "Inclusief schuurwerk en prep" },
+                  { icon: Home, ruimte: "Woonkamer", oppervlak: "35-50 m²", tijd: "1 - 1,5 dag", extra: "Afhankelijk van hoogte en obstakels" },
+                  { icon: Home, ruimte: "Keuken", oppervlak: "15-25 m²", tijd: "0,5 dag", extra: "Rondom apparatuur meer werk" },
+                  { icon: Home, ruimte: "Badkamer", oppervlak: "5-12 m²", tijd: "0,5 dag", extra: "Vochtige ruimte = speciale behandeling" },
+                  { icon: Home, ruimte: "Plafond (woonkamer)", oppervlak: "30-40 m²", tijd: "1 dag", extra: "Zwaarder dan wanden — meer tijd" },
+                  { icon: Home, ruimte: "Complete woning", oppervlak: "150-250 m²", tijd: "3-7 dagen", extra: "Afhankelijk van kamers en type stuc" },
+                ].map((item) => (
+                  <div key={item.ruimte} className="bg-zinc-900 border border-white/5 hover:border-primary/30 rounded-2xl p-6 transition-all group hover:-translate-y-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:border-primary transition-all">
+                        <item.icon size={18} className="text-primary-400 group-hover:text-white transition-colors" />
+                      </div>
+                      <h3 className="font-bold text-white">{item.ruimte}</h3>
+                    </div>
+                    <div className="text-2xl font-black text-primary-400 mb-1">{item.tijd}</div>
+                    <div className="text-zinc-500 text-xs mb-3">{item.oppervlak}</div>
+                    <p className="text-zinc-600 text-xs leading-relaxed">{item.extra}</p>
                   </div>
-                  <div className="text-4xl font-bold text-primary mb-4">
-                    1-2 dagen
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    voor een gemiddelde woning (80-100m²)
-                  </p>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li>• snelste methode</li>
-                    <li>• machinaal aangebracht</li>
-                    <li>• korte droogtijd</li>
-                    <li>• snel bewoonbaar</li>
-                  </ul>
-                </div>
-
-                {/* Traditioneel */}
-                <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-gray-200">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Clock className="text-primary" size={32} />
-                    <h3 className="text-2xl font-bold text-gray-900">
-                      traditioneel
-                    </h3>
-                  </div>
-                  <div className="text-4xl font-bold text-primary mb-4">
-                    3-5 dagen
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    voor een gemiddelde woning (80-100m²)
-                  </p>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li>• ambachtelijk werk</li>
-                    <li>• meerdere lagen mogelijk</li>
-                    <li>• droogtijd tussen lagen</li>
-                    <li>• zorgvuldig afgewerkt</li>
-                  </ul>
-                </div>
-
-                {/* Sierpleister */}
-                <div className="bg-gradient-to-br from-amber-50 to-white p-8 rounded-2xl border-2 border-amber-200">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Clock className="text-primary" size={32} />
-                    <h3 className="text-2xl font-bold text-gray-900">
-                      sierpleister
-                    </h3>
-                  </div>
-                  <div className="text-4xl font-bold text-primary mb-4">
-                    2-4 dagen
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    voor een accent muur (15-25m²)
-                  </p>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li>• decoratief werk</li>
-                    <li>• vaak meerdere lagen</li>
-                    <li>• structuur aanbrengen</li>
-                    <li>• vakmanschap vereist</li>
-                  </ul>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Factoren die duur beïnvloeden */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                wat bepaalt de duur van stucwerk?
-              </h2>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Oppervlakte */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <Home className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
-                        oppervlakte en aantal ruimtes
-                      </h3>
-                      <p className="text-gray-700 mb-4">
-                        logischerwijs duurt een groter oppervlak langer. maar
-                        één grote ruimte is vaak sneller klaar dan meerdere
-                        kleine kamers met hoeken en obstakels.
-                      </p>
-                      <div className="text-sm text-gray-600 space-y-2">
-                        <p>• kleine kamer (15-20m²): halve dag</p>
-                        <p>• woonkamer (30-40m²): 1-2 dagen</p>
-                        <p>• hele woning (80-100m²): 2-5 dagen</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Voorbereiding */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <AlertCircle className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
-                        voorbereidend werk
-                      </h3>
-                      <p className="text-gray-700 mb-4">
-                        de staat van de muren is cruciaal. scheuren moeten
-                        gerepareerd, behang moet verwijderd en het oppervlak
-                        moet geschuurd worden.
-                      </p>
-                      <div className="text-sm text-gray-600 space-y-2">
-                        <p>• schone muren: minimale voorbereiding</p>
-                        <p>• behang verwijderen: +0.5-1 dag</p>
-                        <p>• schuren en repareren: +1-2 dagen</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Droogtijd */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <Calendar className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
-                        droog- en uithardtijd
-                      </h3>
-                      <p className="text-gray-700 mb-4">
-                        tussen verschillende lagen en voor het verven moet het
-                        stucwerk goed drogen. dit is geen actieve werktijd maar
-                        verlengt wel de totale doorlooptijd.
-                      </p>
-                      <div className="text-sm text-gray-600 space-y-2">
-                        <p>• tussen lagen: 4-24 uur</p>
-                        <p>• voor verven: 1-3 dagen</p>
-                        <p>• volledig uitgehard: 2-4 weken</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Type ruimte */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <CheckCircle className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
-                        complexiteit van de ruimte
-                      </h3>
-                      <p className="text-gray-700 mb-4">
-                        trappenhuizen, schuin daken, hoge plafonds en veel
-                        hoeken maken het werk complexer en tijdrovender.
-                      </p>
-                      <div className="text-sm text-gray-600 space-y-2">
-                        <p>• rechte wanden: standaard tempo</p>
-                        <p>• plafonds: meer tijd nodig</p>
-                        <p>• trappenhuizen: significant langer</p>
-                        <p>• hoge ruimten: extra tijd voor steigers</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stappenplan tijdlijn */}
-        <section className="py-16 bg-white">
+        {/* Factoren */}
+        <section className="py-20 bg-zinc-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                typische tijdlijn van een stucwerkproject
-              </h2>
-
-              <div className="space-y-6">
-                {/* Dag 0 */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">
-                      0
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">Bepalende factoren</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Wat bepaalt de tijdsduur?</h2>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { icon: AlertCircle, title: "Staat van de ondergrond", desc: "Een slechte, beschadigde of ongelijke ondergrond vraagt meer voorbereidend werk. Scheuren, gaten en losse stukken moeten eerst worden aangepakt. Dit kan flink wat extra tijd kosten." },
+                  { icon: Calendar, title: "Type stucwerk", desc: "Spackspuiten gaat sneller dan traditioneel handmatig stucwerk. Decoratieve technieken als sierpleister en betonlook zijn bewerkelijker en vragen meer tijd per m²." },
+                  { icon: Clock, title: "Droogtijd", desc: "Na het aanbrengen van stuc is droogtijd essentieel. Gemiddeld 24-48 uur voor sausklaar stucwerk. Bij hoge luchtvochtigheid of dikke lagen kan dit oplopen tot 72 uur." },
+                  { icon: Home, title: "Omvang en bereikbaarheid", desc: "Plafonds kosten meer tijd dan wanden vanwege de werkhouding. Hoge ruimten, smalle trappenhuizen of slecht bereikbare plekken vragen extra materieel en tijd." },
+                ].map((item) => (
+                  <div key={item.title} className="bg-zinc-950/50 border border-white/5 hover:border-primary/20 rounded-2xl p-6 transition-all group">
+                    <div className="flex items-start gap-4">
+                      <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 border border-primary/20 group-hover:bg-primary group-hover:border-primary transition-all">
+                        <item.icon size={20} className="text-primary-400 group-hover:text-white transition-colors" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">{item.title}</h3>
+                        <p className="text-zinc-500 text-sm leading-relaxed">{item.desc}</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="bg-gray-50 p-6 rounded-xl flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      voorbereiding (optioneel)
-                    </h3>
-                    <p className="text-gray-700 mb-2">
-                      meubels verhuizen, afdekken van vloeren en kozijnen,
-                      behang verwijderen indien nodig.
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      💡 tip: dit kun je zelf doen om tijd en kosten te besparen
-                    </p>
-                  </div>
-                </div>
-
-                {/* Dag 1 */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">
-                      1
-                    </div>
-                  </div>
-                  <div className="bg-blue-50 p-6 rounded-xl flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      schuren en repareren
-                    </h3>
-                    <p className="text-gray-700">
-                      alle oppervlakken worden geschuurd, scheuren gerepareerd
-                      en een grondlaag aangebracht voor betere hechting.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Dag 2-3 */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">
-                      2-3
-                    </div>
-                  </div>
-                  <div className="bg-blue-50 p-6 rounded-xl flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      stucwerk aanbrengen
-                    </h3>
-                    <p className="text-gray-700 mb-2">
-                      het eigenlijke stucwerk wordt aangebracht. bij traditioneel
-                      stucwerk vaak in meerdere lagen met droogtijd ertussen.
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      bij spackspuiten vaak in één dag klaar
-                    </p>
-                  </div>
-                </div>
-
-                {/* Dag 4-5 */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">
-                      4-5
-                    </div>
-                  </div>
-                  <div className="bg-blue-50 p-6 rounded-xl flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      afwerken en schoonmaken
-                    </h3>
-                    <p className="text-gray-700">
-                      laatste laag, afwerking van details, schoonmaken en
-                      oplevering. de ruimte is sausklaar.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Dag 6+ */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">
-                      ✓
-                    </div>
-                  </div>
-                  <div className="bg-green-50 p-6 rounded-xl flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      drogen en verven
-                    </h3>
-                    <p className="text-gray-700">
-                      laat het stucwerk 1-3 dagen goed drogen voordat je gaat
-                      verven. voor optimaal resultaat zelfs 1 week wachten.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Tips voor snellere doorlooptijd */}
-        <section className="py-16 bg-gray-50">
+        {/* Planningtips */}
+        <section className="py-20 bg-zinc-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                zo versnél je het proces
-              </h2>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-1" size={24} />
-                    <div>
-                      <h3 className="font-bold text-gray-900 mb-2">
-                        voorbereiding zelf doen
-                      </h3>
-                      <p className="text-gray-700 text-sm">
-                        verhuizen van meubels, verwijderen van behang en
-                        gordijnen scheelt een halve tot hele dag.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-1" size={24} />
-                    <div>
-                      <h3 className="font-bold text-gray-900 mb-2">
-                        goede planning
-                      </h3>
-                      <p className="text-gray-700 text-sm">
-                        plan het werk in één aaneengesloten periode. onderbrekingen
-                        verlengen de totale doorlooptijd.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-1" size={24} />
-                    <div>
-                      <h3 className="font-bold text-gray-900 mb-2">
-                        kies voor spackspuiten
-                      </h3>
-                      <p className="text-gray-700 text-sm">
-                        als snelheid belangrijk is, is spackspuiten vaak de
-                        snelste optie voor grote oppervlakken.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-1" size={24} />
-                    <div>
-                      <h3 className="font-bold text-gray-900 mb-2">
-                        vrije toegang
-                      </h3>
-                      <p className="text-gray-700 text-sm">
-                        zorg dat de stucadoor vrij kan werken zonder
-                        onderbrekingen. dit voorkomt vertraging.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold mb-4 border border-primary/20">Planningtips</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Slim plannen: onze tips</h2>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                veelgestelde vragen over stucwerk tijdsduur
-              </h2>
-
-              <div className="space-y-6">
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    kan ik tijdens het stucwerk in huis blijven?
-                  </h3>
-                  <p className="text-gray-700">
-                    ja, dat kan meestal wel. we werken per ruimte en zorgen
-                    ervoor dat de overlast beperkt blijft. er is wel wat stof en
-                    je moet rekening houden met droogtijden voordat je de ruimte
-                    weer volledig kunt gebruiken.
-                  </p>
-                </div>
-
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    wanneer kan ik verven na het stucwerk?
-                  </h3>
-                  <p className="text-gray-700">
-                    voor het beste resultaat wacht je 3-7 dagen voordat je gaat
-                    verven. het stucwerk moet goed droog en uitgehard zijn. we
-                    geven bij oplevering altijd aan wanneer je kunt verven.
-                  </p>
-                </div>
-
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    kan het sneller dan de gemiddelde tijd?
-                  </h3>
-                  <p className="text-gray-700">
-                    soms wel, soms niet. de droogtijd tussen lagen en voor het
-                    verven is vaak de beperkende factor. met meer mensen werken
-                    versnelt het aanbrengen, maar niet het drogen.
-                  </p>
-                </div>
-
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    wat als er meer tijd nodig is dan gepland?
-                  </h3>
-                  <p className="text-gray-700">
-                    bij een goede voorbezichtiging komt dit zelden voor. mocht er
-                    onverwachte schade of extra werk nodig zijn, dan bespreken we
-                    dit altijd eerst met je voordat we doorgaan.
-                  </p>
-                </div>
-
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    werken jullie ook in het weekend?
-                  </h3>
-                  <p className="text-gray-700">
-                    in overleg is dat mogelijk. voor projecten met een strakke
-                    planning kunnen we soms weekendwerk inplannen. vraag ernaar
-                    bij je offerte.
-                  </p>
-                </div>
+              <div className="space-y-4">
+                {[
+                  { num: "1", title: "Plan stucwerk vóór het schilderwerk", desc: "Stuc altijd eerst, dan schilderen. Zo voorkom je dat vers schilderwerk beschadigt door stucplekken of schuurstof." },
+                  { num: "2", title: "Houd rekening met droogtijd", desc: "Plan minimaal 48-72 uur droogtijd na het stucken voordat de kamer weer in gebruik genomen wordt of geschilderd wordt." },
+                  { num: "3", title: "Combineer kamers slim", desc: "Laat aansluitende kamers tegelijk stucken. Zo werkt het team efficiënter en kunt u snel de volgende fase plannen." },
+                  { num: "4", title: "Informeer uw omgeving", desc: "Buren informeren over mogelijke geluidsoverlast wordt altijd gewaardeerd. Wij werken zo stil en netjes mogelijk." },
+                ].map((tip) => (
+                  <div key={tip.num} className="bg-zinc-900 border border-white/5 hover:border-primary/20 p-6 rounded-2xl transition-all group">
+                    <div className="flex items-start gap-4">
+                      <span className="text-3xl font-black text-primary/20 leading-none flex-shrink-0">{tip.num}</span>
+                      <div>
+                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">{tip.title}</h3>
+                        <p className="text-zinc-500 text-sm leading-relaxed">{tip.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                wil je weten wanneer we kunnen starten?
-              </h2>
-              <p className="text-xl mb-8 text-blue-100">
-                vraag een vrijblijvende offerte aan en we plannen samen de
-                meest geschikte periode voor jouw stucwerkproject.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-                >
-                  <Calendar size={20} />
-                  plan je project
-                </Link>
-                <a
-                  href="tel:0612345678"
-                  className="inline-flex items-center justify-center gap-2 bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark/90 transition-colors border-2 border-white/20"
-                >
-                  <Phone size={20} />
-                  direct bellen
-                </a>
-              </div>
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-zinc-900" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">Klaar om uw project te plannen?</h2>
+            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">Vraag vandaag een gratis offerte aan en wij geven u een realistische planning voor uw stucwerkproject.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-white text-primary-800 px-8 py-4 rounded-xl font-bold hover:bg-primary-50 transition-all shadow-xl shadow-black/20 hover:-translate-y-0.5">
+                Offerte & planning aanvragen <ArrowRight size={18} />
+              </Link>
+              <a href="tel:+31684794108" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all">
+                <Phone size={18} /> Direct bellen
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Related articles */}
-        <section className="py-16 bg-gray-50">
+        {/* Related */}
+        <section className="py-16 bg-zinc-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                lees ook
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <Link
-                  href="/blog/wat-kost-stucwerk"
-                  className="group bg-white p-6 rounded-xl hover:shadow-lg transition-all"
-                >
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                    wat kost stucwerk in 2026?
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    ontdek welke factoren de prijs van stucwerk bepalen en
-                    vraag een offerte aan.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
-                    lees meer <ArrowRight size={18} />
-                  </span>
-                </Link>
-
-                <Link
-                  href="/diensten/stucwerk"
-                  className="group bg-white p-6 rounded-xl hover:shadow-lg transition-all"
-                >
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                    alles over stucwerk
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    ontdek alle mogelijkheden en technieken voor stucwerk in
-                    jouw woning.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
-                    lees meer <ArrowRight size={18} />
-                  </span>
-                </Link>
+              <h2 className="text-2xl font-bold text-white mb-8">Lees ook</h2>
+              <div className="grid md:grid-cols-2 gap-5">
+                {[
+                  { href: "/blog/wat-kost-stucwerk", title: "Wat kost stucwerk in 2026?", desc: "Ontdek welke factoren de prijs van stucwerk bepalen." },
+                  { href: "/blog/stucwerk-scheuren-repareren", title: "Stucwerk scheuren repareren", desc: "Alles over het herkennen en oplossen van scheuren in stucwerk." },
+                ].map((a) => (
+                  <Link key={a.href} href={a.href} className="group bg-zinc-950/50 border border-white/5 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 p-6 rounded-2xl transition-all block hover:-translate-y-0.5">
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">{a.title}</h3>
+                    <p className="text-zinc-500 mb-4 text-sm leading-relaxed">{a.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-primary-400 font-semibold text-sm group-hover:gap-3 transition-all">Lees meer <ArrowRight size={16} /></span>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
         </section>
+
       </main>
       <Footer />
     </>

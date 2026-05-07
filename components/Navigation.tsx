@@ -45,7 +45,7 @@ export default function Navigation() {
             <div className="flex items-center gap-6">
               <a
                 href="tel:+31684794108"
-                className="flex items-center gap-1.5 hover:text-accent transition-colors"
+                className="flex items-center gap-1.5 hover:text-primary-300 transition-colors"
               >
                 <Phone size={13} />
                 <span>06 84794108</span>
@@ -53,7 +53,7 @@ export default function Navigation() {
               <span className="text-white/30">|</span>
               <a
                 href="mailto:info@mkhbouw.nl"
-                className="hover:text-accent transition-colors"
+                className="hover:text-primary-300 transition-colors"
               >
                 info@mkhbouw.nl
               </a>
@@ -69,8 +69,8 @@ export default function Navigation() {
       <nav
         className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-gray-100"
-            : "bg-white border-b border-transparent"
+            ? "bg-zinc-950/95 backdrop-blur-xl shadow-lg shadow-black/40 border-b border-white/5"
+            : "bg-zinc-950 border-b border-white/5"
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +78,7 @@ export default function Navigation() {
             {/* Logo */}
             <Link href="/" className="relative flex items-center">
               <Image
-                src="/logo.png"
+                src="/white-logo.png"
                 alt="MKH Bouw"
                 width={320}
                 height={320}
@@ -93,10 +93,10 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative px-4 py-2 text-gray-600 font-medium hover:text-primary transition-colors group"
+                  className="relative px-4 py-2 text-zinc-400 font-medium hover:text-white transition-colors group"
                 >
                   {link.label}
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent rounded-full group-hover:w-6 transition-all duration-300" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary rounded-full group-hover:w-6 transition-all duration-300" />
                 </Link>
               ))}
             </div>
@@ -117,7 +117,7 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden relative w-11 h-11 flex items-center justify-center rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
+              className="md:hidden relative w-11 h-11 flex items-center justify-center rounded-xl bg-zinc-800 hover:bg-zinc-700 transition-colors text-white"
               aria-label="Menu"
             >
               {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -129,13 +129,13 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <>
             <div
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
-            <div className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 md:hidden shadow-2xl">
-              <div className="flex items-center justify-between p-5 border-b border-gray-100">
+            <div className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-zinc-900 z-50 md:hidden shadow-2xl border-l border-white/5">
+              <div className="flex items-center justify-between p-5 border-b border-white/5">
                 <Image
-                  src="/logo.png"
+                  src="/white-logo.png"
                   alt="MKH Bouw"
                   width={160}
                   height={160}
@@ -143,7 +143,7 @@ export default function Navigation() {
                 />
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
+                  className="w-10 h-10 flex items-center justify-center rounded-xl bg-zinc-800 hover:bg-zinc-700 transition-colors text-white"
                   aria-label="Sluiten"
                 >
                   <X size={20} />
@@ -155,14 +155,14 @@ export default function Navigation() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-3.5 px-4 rounded-xl text-gray-700 font-medium hover:bg-primary/5 hover:text-primary transition-all"
+                    className="flex items-center justify-between py-3.5 px-4 rounded-xl text-zinc-300 font-medium hover:bg-white/5 hover:text-white transition-all"
                   >
                     {link.label}
-                    <ChevronRight size={16} className="text-gray-400" />
+                    <ChevronRight size={16} className="text-zinc-600" />
                   </Link>
                 ))}
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-5 border-t border-gray-100 bg-gray-50/50">
+              <div className="absolute bottom-0 left-0 right-0 p-5 border-t border-white/5 bg-zinc-900">
                 <a
                   href="tel:+31684794108"
                   className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-4 rounded-xl font-semibold shadow-lg shadow-primary/25"

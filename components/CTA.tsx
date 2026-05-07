@@ -7,17 +7,17 @@ import { motion } from "framer-motion";
 export default function CTA() {
   return (
     <section className="relative py-24 overflow-hidden">
-      {/* Full background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-700 to-primary-900" />
+      {/* Dark blue gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-zinc-900" />
 
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
-      <div className="absolute top-20 right-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-10 left-10 w-60 h-60 bg-white/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+      <div className="absolute top-20 right-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-60 h-60 bg-white/[0.02] rounded-full blur-3xl" />
 
       {/* Grid pattern */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='1'%3E%3Cpath d='M0 0h1v40H0zM40 0v1H0V0z'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
@@ -33,7 +33,7 @@ export default function CTA() {
             className="mb-8"
           >
             <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-6 py-2.5 rounded-full text-sm font-semibold border border-white/15">
-              <Zap className="w-4 h-4 text-accent" fill="currentColor" />
+              <Zap className="w-4 h-4 text-primary-300" fill="currentColor" />
               Gratis & Vrijblijvend
             </span>
           </motion.div>
@@ -55,8 +55,9 @@ export default function CTA() {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10"
           >
-            Ontvang binnen <span className="font-bold text-white">24 uur</span>{" "}
-            een persoonlijke offerte. Ervaren vakmanschap, eerlijke prijzen.
+            Ontvang binnen{" "}
+            <span className="font-bold text-white">24 uur</span> een
+            persoonlijke offerte. Ervaren vakmanschap, eerlijke prijzen.
           </motion.p>
 
           {/* Buttons */}
@@ -69,7 +70,7 @@ export default function CTA() {
           >
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center bg-accent text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-accent-600 transition-all shadow-xl shadow-accent/25 hover:shadow-2xl hover:shadow-accent/30 hover:-translate-y-0.5"
+              className="group inline-flex items-center justify-center bg-white text-primary-800 px-10 py-5 rounded-xl font-bold text-lg hover:bg-primary-50 transition-all shadow-xl shadow-black/20 hover:shadow-2xl hover:shadow-black/30 hover:-translate-y-0.5"
             >
               Vraag Offerte Aan
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -106,7 +107,7 @@ export default function CTA() {
                 key={text}
                 className="flex items-center gap-2 text-white/70 text-sm"
               >
-                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-primary-300 flex-shrink-0" />
                 <span>{text}</span>
               </div>
             ))}

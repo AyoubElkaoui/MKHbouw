@@ -8,28 +8,31 @@ const testimonials = [
     name: "Marco de Vries",
     role: "Eigenaar horecagelegenheid",
     location: "Amsterdam",
-    text: "MKH Bouw heeft onze complete zaak gerenoveerd. Van stucwerk tot schilderwerk, alles binnen tijd en budget. Het team werkte netjes en professioneel, met minimale overlast voor onze gasten. Zeer tevreden met het eindresultaat!",
+    text: "MKH Bouw heeft onze complete zaak afgebouwd en gerenoveerd. Van stucwerk tot schilderwerk en tegelen, alles binnen tijd en budget. Het team werkte netjes en professioneel. Zeer tevreden met het eindresultaat!",
     initials: "MV",
   },
   {
     name: "Linda Bakker",
     role: "Particulier",
     location: "Utrecht",
-    text: "Fantastisch werk geleverd bij onze woningrenovatie. De communicatie was helder, de planning klopte precies en het resultaat overtrof onze verwachtingen. Het team was vriendelijk en zorgvuldig.",
+    text: "Fantastisch werk geleverd bij onze totale woningrenovatie. De communicatie was helder, de planning klopte precies en het resultaat overtrof onze verwachtingen. Eén aanspreekpunt voor alles — erg prettig!",
     initials: "LB",
   },
   {
     name: "Peter Janssen",
     role: "Facility Manager",
     location: "Rotterdam",
-    text: "Al meerdere kantoorpanden laten renoveren door MKH Bouw. Altijd snel, netjes en met minimale overlast voor onze medewerkers. Een betrouwbare partner voor al onze facility behoeften.",
+    text: "Al meerdere kantoorpanden laten renoveren door MKH Bouw. Altijd snel, netjes en met minimale overlast voor onze medewerkers. Een betrouwbare totaalpartner voor al onze bouwbehoeften.",
     initials: "PJ",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section className="py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-zinc-900 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -38,16 +41,15 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-flex items-center gap-2 bg-primary/5 text-primary px-5 py-2 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
-            <span className="w-2 h-2 rounded-full bg-accent" />
+          <span className="inline-flex items-center gap-2 bg-primary/10 text-primary-400 px-5 py-2 rounded-full text-sm font-semibold uppercase tracking-wider mb-4 border border-primary/20">
+            <span className="w-2 h-2 rounded-full bg-primary-400" />
             Klantervaringen
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-5">
-            Wat Klanten <span className="text-primary">Zeggen</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-5">
+            Wat Klanten <span className="text-primary-400">Zeggen</span>
           </h2>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Meer dan 250 tevreden klanten gingen u voor. Lees hun ervaringen met
-            onze diensten.
+          <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
+            Meer dan 250 tevreden klanten gingen u voor. Lees hun ervaringen met onze diensten.
           </p>
         </motion.div>
 
@@ -60,7 +62,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all duration-500"
+              className="group relative bg-zinc-950 p-8 rounded-2xl border border-white/5 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-1"
             >
               {/* Quote icon */}
               <div className="absolute top-6 right-6">
@@ -73,27 +75,27 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1 mb-5">
                 {[...Array(5)].map((_, j) => (
-                  <Star key={j} size={16} className="fill-accent text-accent" />
+                  <Star key={j} size={16} className="fill-primary-400 text-primary-400" />
                 ))}
               </div>
 
               {/* Text */}
-              <p className="text-gray-600 mb-8 leading-relaxed text-sm">
+              <p className="text-zinc-400 mb-8 leading-relaxed text-sm">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-5 border-t border-gray-100">
-                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <span className="text-primary font-bold text-sm">
+              <div className="flex items-center gap-3 pt-5 border-t border-white/5">
+                <div className="w-11 h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+                  <span className="text-primary-400 font-bold text-sm">
                     {testimonial.initials}
                   </span>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900 text-sm">
+                  <p className="font-bold text-white text-sm">
                     {testimonial.name}
                   </p>
-                  <p className="text-xs text-gray-500">
+                  <p className="text-xs text-zinc-500">
                     {testimonial.role} &bull; {testimonial.location}
                   </p>
                 </div>

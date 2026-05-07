@@ -42,30 +42,26 @@ export default function ContactForm() {
     }
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const inputClass =
+    "w-full px-4 py-3 rounded-xl border border-white/10 bg-zinc-800/60 focus:bg-zinc-800 focus:border-primary/50 focus:ring-4 focus:ring-primary/10 focus:outline-none transition-all text-white placeholder-zinc-500 text-sm";
 
   if (status === "success") {
     return (
       <div className="text-center py-12">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-6">
-          <CheckCircle className="text-green-600" size={32} />
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-green-950/50 border border-green-800/50 rounded-full mb-6">
+          <CheckCircle className="text-green-400" size={32} />
         </div>
-        <h3 className="text-2xl font-bold text-gray-900 mb-3">
-          Bericht verzonden!
-        </h3>
-        <p className="text-gray-600 mb-6">
+        <h3 className="text-2xl font-bold text-white mb-3">Bericht verzonden!</h3>
+        <p className="text-zinc-400 mb-6">
           Bedankt voor uw bericht. We nemen binnen 24 uur contact met u op.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="text-primary font-semibold hover:underline"
+          className="text-primary-400 font-semibold hover:text-primary-300 transition-colors"
         >
           Nog een bericht versturen
         </button>
@@ -74,125 +70,50 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-5">
       {status === "error" && (
-        <div className="flex items-center gap-3 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+        <div className="flex items-center gap-3 bg-red-950/50 border border-red-800/50 text-red-400 px-4 py-3 rounded-xl">
           <AlertCircle size={20} className="flex-shrink-0" />
           <p className="text-sm">{errorMessage}</p>
         </div>
       )}
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-5">
         <div>
-          <label
-            htmlFor="name"
-            className="block text-gray-700 font-semibold mb-2"
-          >
-            Naam *
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-            placeholder="Uw naam"
-          />
+          <label htmlFor="name" className="block text-zinc-400 font-medium mb-2 text-sm">Naam *</label>
+          <input type="text" id="name" name="name" required value={formData.name} onChange={handleChange} className={inputClass} placeholder="Uw naam" />
         </div>
         <div>
-          <label
-            htmlFor="email"
-            className="block text-gray-700 font-semibold mb-2"
-          >
-            Email *
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-            placeholder="uw@email.nl"
-          />
+          <label htmlFor="email" className="block text-zinc-400 font-medium mb-2 text-sm">Email *</label>
+          <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange} className={inputClass} placeholder="uw@email.nl" />
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-5">
         <div>
-          <label
-            htmlFor="phone"
-            className="block text-gray-700 font-semibold mb-2"
-          >
-            Telefoon
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-            placeholder="06 12345678"
-          />
+          <label htmlFor="phone" className="block text-zinc-400 font-medium mb-2 text-sm">Telefoon</label>
+          <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className={inputClass} placeholder="06 12345678" />
         </div>
         <div>
-          <label
-            htmlFor="subject"
-            className="block text-gray-700 font-semibold mb-2"
-          >
-            Onderwerp *
-          </label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            required
-            value={formData.subject}
-            onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all"
-            placeholder="Waarover gaat het?"
-          />
+          <label htmlFor="subject" className="block text-zinc-400 font-medium mb-2 text-sm">Onderwerp *</label>
+          <input type="text" id="subject" name="subject" required value={formData.subject} onChange={handleChange} className={inputClass} placeholder="Waarover gaat het?" />
         </div>
       </div>
 
       <div>
-        <label
-          htmlFor="message"
-          className="block text-gray-700 font-semibold mb-2"
-        >
-          Bericht *
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          required
-          rows={6}
-          value={formData.message}
-          onChange={handleChange}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-slate-200 outline-none transition-all resize-none"
-          placeholder="Vertel ons over uw project..."
-        ></textarea>
+        <label htmlFor="message" className="block text-zinc-400 font-medium mb-2 text-sm">Bericht *</label>
+        <textarea id="message" name="message" required rows={6} value={formData.message} onChange={handleChange} className={`${inputClass} resize-none`} placeholder="Vertel ons over uw project..." />
       </div>
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full bg-primary text-white px-8 py-4 rounded-full hover:bg-primary/90 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center gap-2 disabled:opacity-70 disabled:hover:scale-100"
+        className="w-full bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-700 transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/25 hover:-translate-y-0.5 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
       >
         {status === "loading" ? (
-          <>
-            <Loader2 size={20} className="animate-spin" />
-            Versturen...
-          </>
+          <><Loader2 size={20} className="animate-spin" />Versturen...</>
         ) : (
-          <>
-            <Send size={20} />
-            Verstuur Bericht
-          </>
+          <><Send size={20} />Verstuur Bericht</>
         )}
       </button>
     </form>
